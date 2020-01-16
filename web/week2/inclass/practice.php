@@ -14,11 +14,11 @@
 
       div {
          border-style: solid;
+         padding-bottom: 5px;
       }
 
       div:nth-child(even) {
          color: red;
-         border-color: red;
       }
    </style>
 </head>
