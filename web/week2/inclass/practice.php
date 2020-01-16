@@ -17,6 +17,7 @@
          border: 1px solid black;
          height: 50px;
          text-align: center;
+         vertical-align: middle;
          font-size: 20px;
       }
 
