@@ -31,9 +31,9 @@
             <p id="visitor"></p>
 
             <?php
-               echo "Today is " . date("m/d/yy") . "<br>";
+               echo "<p>Today is " . date("m/d/yy") . "<p><br>";
                
-               echo "Welcome to my website! Explore and see what you can find!<br>";
+               echo "<p>Welcome to my website! Explore and see what you can find!<p><br>";
             ?>
 
             <label>What is your name?</label>
