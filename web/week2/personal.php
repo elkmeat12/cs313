@@ -20,14 +20,14 @@
       <div id="topNav">
          <nav>
             <a href="index.php">Home</a>
-            <a href="personal.html">Introduction</a>
+            <a href="personal.php">Introduction</a>
             <a href="assignments.html">CS313 Assignments</a>
          </nav>
       </div>
 
+      <div id="trap">
       <main>
 
-         <div id="trap">
             <h2>About Me</h2>
             <hr>
             <p>
@@ -43,10 +43,12 @@
                <img src="baby.jpg" alt="Gender Reveal Party">
                <img src="fish.jpg" alt="Tyler Fishing">
             </div>
-         </div>
-
-      </main>
-
+            
+         </main>
+         <footer>
+            <?php include 'footer.php' ?>
+         </footer>
+      </div>
    </div>
 </body>
 </html>

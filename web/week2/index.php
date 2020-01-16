@@ -21,7 +21,7 @@
       <div id="topNav">
          <nav>
             <a href="index.php">Home</a>
-            <a href="personal.html">Introduction</a>
+            <a href="personal.php">Introduction</a>
             <a href="assignments.html">CS313 Assignments</a>
          </nav>
       </div>
