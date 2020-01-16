@@ -7,8 +7,18 @@
    <title>Class Exercise</title>
 
    <style> 
+      body {
+         text-align: center;
+         margin: 50px;
+      }
+
+      div {
+         border-style: solid;
+      }
+
       div:nth-child(even) {
          color: red;
+         border-color: red;
       }
    </style>
 </head>
