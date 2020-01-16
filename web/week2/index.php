@@ -31,7 +31,7 @@
             <p id="visitor"></p>
 
             <?php
-               echo "<p>Today is " . date("m/d/yy") . "<p><br>";
+               echo "<p>Today is " . date("m/d/yy") . "<p>";
                
                echo "<p>Welcome to my website! Explore and see what you can find!<p><br>";
             ?>
