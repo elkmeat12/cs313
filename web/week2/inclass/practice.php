@@ -14,7 +14,7 @@
 
       div {
          border-style: solid;
-         padding-bottom: 5px;
+         padding-bottom: 10px;
       }
 
       div:nth-child(even) {
