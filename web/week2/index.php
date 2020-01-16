@@ -32,9 +32,9 @@
 
             <?php
                echo "Today is " . date("m/d/yy") . "<br>";
+               
+               echo "Welcome to my website! Explore and see what you can find!";
             ?>
-
-            <p>Welcome to my website! Explore and see what you can find!</p>
 
             <label>What is your name?</label>
             <br><br>
