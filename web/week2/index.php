@@ -26,8 +26,8 @@
          </nav>
       </div>
 
-      <main>
-         <div id="trap">
+      <div id="trap">
+         <main>
             <p id="visitor"></p>
             <p>Welcome to my website! Explore and see what you can find!<p>
 
@@ -42,12 +42,12 @@
             <label>Click to show date and time:</label>
             <p id="date"></p>
             <button type="button" onclick="showDate();">Show Date and Time</button>
-         </div>
-      </main>
-
-      <footer>
-         <?php include 'footer.php' ?>
-      </footer>
+         </main>
+         
+         <footer>
+            <?php include 'footer.php' ?>
+         </footer>
+      </div>
 
    </div>
 </body>
