@@ -9,12 +9,15 @@
    <style> 
       body {
          text-align: center;
-         margin: 50px;
       }
 
       div {
-         border-style: solid;
-         padding-bottom: 10px;
+         width: 80%;
+         margin: 10px 0 10px 10%;
+         border: 1px solid black;
+         height: 50px;
+         text-align: center;
+         font-size: 20px;
       }
 
       div:nth-child(even) {
@@ -23,15 +26,9 @@
    </style>
 </head>
 <body>
-   <?php
-      echo "<h2>PHP Team Activity</h2>";
-
-      $count = 0;
-
-      while($count <= 10) {
-         echo "<div id='div$count'>This is div #$count</div>";
-         ++$count;
-      }
-   ?>
+   <?php for ($i = 0; $i < 10; $i++) { ?>
+      <div id="<?php echo $i; ?>">This is div #<?php echo $i; ?></div>
+   
+   <?php } ?>
 </body>
 </html>
