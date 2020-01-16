@@ -29,12 +29,7 @@
       <main>
          <div id="trap">
             <p id="visitor"></p>
-
-            <?php
-               echo "<p>Today is " . date("m/d/yy") . "<p>";
-               
-               echo "<p>Welcome to my website! Explore and see what you can find!<p><br>";
-            ?>
+            <p>Welcome to my website! Explore and see what you can find!<p>
 
             <label>What is your name?</label>
             <br><br>
@@ -49,6 +44,10 @@
             <button type="button" onclick="showDate();">Show Date and Time</button>
          </div>
       </main>
+
+      <footer>
+         <?php include 'footer.php' ?>
+      </footer>
 
    </div>
 </body>
