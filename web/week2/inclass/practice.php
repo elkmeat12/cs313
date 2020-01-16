@@ -17,7 +17,6 @@
          border: 1px solid black;
          height: 50px;
          text-align: center;
-         vertical-align: middle;
          font-size: 20px;
       }
 
@@ -27,9 +26,12 @@
    </style>
 </head>
 <body>
-   <?php for ($i = 0; $i < 10; $i++) { ?>
-      <div id="<?php echo $i; ?>">This is div #<?php echo $i; ?></div>
-   
-   <?php } ?>
+   <h1>PHP Team Activity</h1>
+   <div style="width: 50%; float:left;">
+      <?php include 'copy.php' ;?>
+   </div>
+   <div style="width: 50%; float:right;">
+      <?php include 'copy.php' ;?>
+   </div>
 </body>
 </html>
