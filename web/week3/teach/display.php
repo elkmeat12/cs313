@@ -1,6 +1,13 @@
 <html>
    <body>
       <?php
+         $continents = array("na"=>"North America",
+                            "sa"=>"South America",
+                            "eu"=>"Europe",
+                            "as"=>"Asia",
+                            "au"=>"Australia",
+                            "an"=>"Antarctica");
+
          $name = htmlspecialchars($_POST["name"]);
          $email = htmlspecialchars($_POST["email"]);
          $major = htmlspecialchars($_POST["major"]);
@@ -15,7 +22,7 @@
          echo "Visited continents: <br>";
          if (!empty($continent)){
             foreach($continent as $selected){
-               echo $selected . "<br>";
+               echo $continents[$selected] . "<br>";
             }
          }
          else {
