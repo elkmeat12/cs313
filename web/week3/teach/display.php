@@ -10,11 +10,12 @@
          echo "Name: $name <br>";
          echo "Email: <a href='mailto:$email'>$email</a><br>";
          echo "Major: $major<br>";
-         echo "Comments: $comment";
+         echo "Comments: $comment<br>";
 
+         echo "Visited continents: <br>";
          if (!empty($continent)){
             foreach($continent as $selected){
-               echo $selected . "</br>";
+               echo $selected . "<br>";
             }
          }
       ?>
