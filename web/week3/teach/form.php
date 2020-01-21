@@ -17,7 +17,7 @@
       Major:<br>
       
       <?php
-         $majors = array("Computer Science (CS), Web Design (WEB), Computer Information Technology (CIT), Computer Engineering (CE)");
+         $majors = array("Computer Science (CS)", "Web Design (WEB)", "Computer Information Technology (CIT)", "Computer Engineering (CE)");
          if (!empty($majors)) {
             foreach($majors as $selected) {
                echo "<input type='radio' name='major' value=$selected> $selected <br>";
