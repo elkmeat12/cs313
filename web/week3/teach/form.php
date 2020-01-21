@@ -21,7 +21,7 @@
          for ($i=0; $i <= count($majors); $i++)
          {
             foreach($majors as $selected) {
-               echo "<input type='radio' name='major' value=$selected> $selected <br>";
+               echo "<input type='radio' name='major' value=$selected[$i]> $selected[$i] <br>";
             }
          }
       ?>
