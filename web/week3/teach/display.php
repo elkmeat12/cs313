@@ -12,15 +12,9 @@
          echo "Major: $major<br>";
          echo "Comments: $comment";
 
-         if (empty($continent))
-         {
-            echo "You should get out of the house...";
-         }
-         else
-         {
-            for ($i = 0; $i < count($continent); $i++)
-            {
-               echo $continent[$i] . "<br>";
+         if (!empty($continent)){
+            foreach($continent as $selected){
+               echo $selected . "</br>";
             }
          }
       ?>
