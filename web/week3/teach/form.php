@@ -20,7 +20,9 @@
          $majors = array("Computer Science (CS), Web Design (WEB), Computer Information Technology (CIT), Computer Engineering (CE)");
          for ($i=0; $i <= count($majors); $i++)
          {
-            echo "<input type='radio' name='major' value=$majors> $majors <br>";
+            foreach($majors as $selected) {
+               echo "<input type='radio' name='major' value=$selected> $selected <br>";
+            }
          }
       ?>
       
