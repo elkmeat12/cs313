@@ -1,8 +1,15 @@
 <html>
    <body>
-      Name: <?php echo $_POST["name"]; ?><br>
-      Email: <a href="mailto:<?php echo $_POST['email']; ?>"><?php echo $_POST["email"]; ?></a><br>
-      Major: <?php echo $_POST["major"]; ?><br>
-      Comments: <?php echo $_POST["comment"]; ?><br>
+      <?php
+         $name = htmlspecialchars($_POST["name"]);
+         $email = htmlspecialchars($_POST["email"]);
+         $major = htmlspecialchars($_POST["major"]);
+         $comment = htmlspecialchars($_POST["comment"]);
+
+         echo "Name: $name <br>";
+         echo "Email: <a href='mailto:$email'>$email</a><br>";
+         echo "Major: $major<br>";
+         echo "Comments: $comment";
+      ?>
    </body>
 </html>
