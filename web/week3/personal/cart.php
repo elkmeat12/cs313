@@ -76,7 +76,7 @@
           <?php
             if(isset($_COOKIE["chip1"])) {
               if ($_COOKIE["chip1"] > 0) { ?>
-                <!-- <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
                     <img class="card-img-top img-center" src="images/chips.jpeg" alt="Doritos Chips">
                     <div class="card-body">
@@ -91,8 +91,7 @@
                       <button onclick="removeCart('chip1')" class="btn btn-primary float-right">Remove</button>
                     </div>
                   </div>
-                </div> -->
-                <p>Chip 1 selected</p>
+                </div>
           <?php   }
             }
           ?>
