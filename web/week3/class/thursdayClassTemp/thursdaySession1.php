@@ -15,6 +15,11 @@
 ?>
       <a href="thursdaySession2.php">Check the variables on another page</a>
 
+      <h3>Just for kicks, let's try this with a form</h3>
+      <form action="" method="post">
+         <input type="text" name="picture">
+         <input type="submit" name="Submit" value="Submit!">
+      </form>
       <?php // set session variables using a form ?>
    </body>
 </html>
