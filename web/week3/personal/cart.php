@@ -60,9 +60,11 @@
           <a href="prove3.php" class="list-group-item">Back to Browse</a>
         </div>
 
-        <div class="container-fluid bg2 h-75">
-          <button onclick="window.location.href = 'checkout.php';" class="btn btn-primary">Checkout</button>
+        <div class="container-fluid bg2 h-100">
+          <label>Total: </label>
         </div>
+        <button onclick="window.location.href = 'checkout.php';" class="btn btn-primary">Checkout</button>
+
       </div>
       <!-- /.col-lg-3 -->
 
