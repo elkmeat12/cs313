@@ -88,7 +88,7 @@
                 <p class="card-text">DORITOS FLAMIN' HOT Limon introduces a new Flamin' Hot experience, bringing the same signature heat but adding a twist of lime.</p>
               </div>
               <div class="card-footer">
-                <input oninput="addItem(this.value)" name="chip1" id="chip1" value="0" maxlength="2" size="1" class="float-left text-center"/>
+                <input name="chip1" id="chip1" value="0" maxlength="2" size="1" class="float-left text-center"/>
                 <button type="button" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
