@@ -73,6 +73,8 @@
         <h4 class="my-4">Snacks Added to Cart</h4>
 
         <hr>
+        
+        <button onclick="window.location.href = 'checkout.php';" class="btn btn-primary">Checkout</button>
 
         <div class="row">
 
@@ -226,8 +228,7 @@
 
         </div>
         <!-- /.row -->
-        <button onclick="window.location.href = 'checkout.php';" class="btn btn-primary">Checkout</button>
-        <br><br>
+        <!-- <button onclick="window.location.href = 'checkout.php';" class="btn btn-primary">Checkout</button> -->
       </div>
       <!-- /.col-lg-9 -->
 
