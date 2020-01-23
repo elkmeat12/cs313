@@ -50,7 +50,7 @@ function adjustCart(item) {
    if (isNaN(x) || x < 0) {
      text = "Input not valid<br>Please make sure that your quantity is not negative";
    } else {
-     text = "Quantity Adjusted";
+     text = "Order Amount Adjusted";
  
      //https://stackoverflow.com/questions/5045053/set-cookie-wih-js-read-with-php-problem
      var date = new Date();
@@ -71,7 +71,7 @@ function removeCart(item) {
    // Get the value of the input field with id=item
    x = document.getElementById(item).value;
 
-   text = "Item Removed";
+   text = "Item Removed, reload page";
 
    //https://stackoverflow.com/questions/5045053/set-cookie-wih-js-read-with-php-problem
    var date = new Date();

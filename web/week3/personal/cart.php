@@ -84,7 +84,7 @@
                         Flamin Hot Doritos
                       </h4>
                       <h5>$2.99</h5>
-                      <input name="chip1" id="chip1" type="number" value="<?php echo $_COOKIE["chip1"]; ?>" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                      <input name="chip1" id="chip1" type="number" value="<?php echo $_COOKIE["chip1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                     </div>
                     <div class="card-footer">
                       <button onclick="adjustCart('chip1')" class="btn btn-primary float-left">Adjust</button>
