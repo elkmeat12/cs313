@@ -75,8 +75,8 @@
 
           <?php
             if (isset($_COOKIE["chip1"])) {
-              if ($_COOKIE["chip1"] > 0) { ?>
-                <!-- <div class="col-lg-4 col-md-6 mb-4">
+              if ($_COOKIE["chip1"] >= 0) { ?>
+                <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
                   <img class="card-img-top img-center" src="images/chips.jpeg" alt="Doritos Chips">
                   <div class="card-body">
@@ -84,15 +84,14 @@
                       Flamin Hot Doritos
                     </h4>
                     <h5>$2.99</h5>
-                    <input name="chip1" id="chip1" type="number" value="" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                    <input name="chip1" id="chip1" type="number" value="<?php echo $_COOKIE["chip1"]; ?>" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                   </div>
                   <div class="card-footer">
                     <button onclick="adjustCart('chip1')" class="btn btn-primary float-right">Adjust</button>
                     <button onclick="removeCart('chip1')" class="btn btn-primary float-right">Remove</button>
                   </div>
                 </div>
-              </div> -->
-              <p>Doritors was selected</p>
+              </div>
           <?php   }
             }
           ?>

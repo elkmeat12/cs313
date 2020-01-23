@@ -41,8 +41,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <!-- <a class="nav-link" href="cart.php">View Cart</a> -->
-            <button onclick="window.location.href = 'cart.php';" style="float: right;">Cart</button>
+            <a class="nav-link" href="cart.php">View Cart</a>
           </li>
         </ul>
       </div>
