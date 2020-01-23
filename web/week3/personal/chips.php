@@ -28,19 +28,19 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg1">
     <div class="container">
-      <a class="navbar-brand" href="prove3.html">The Snack Shop</a>
+      <a class="navbar-brand" href="prove3.php">The Snack Shop</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="prove3.html">Home
+            <a class="nav-link" href="prove3.php">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cart.html">View Cart</a>
+            <a class="nav-link" href="cart.php">View Cart</a>
           </li>
         </ul>
       </div>
@@ -56,9 +56,9 @@
 
         <h2 class="my-4">Browse Snacks</h2>
         <div class="list-group">
-          <a href="chips.html" class="list-group-item active">Chips</a>
-          <a href="cookie.html" class="list-group-item">Cookies</a>
-          <a href="drinks.html" class="list-group-item">Drinks</a>
+          <a href="chips.php" class="list-group-item active">Chips</a>
+          <a href="cookie.php" class="list-group-item">Cookies</a>
+          <a href="drinks.php" class="list-group-item">Drinks</a>
         </div>
 
       </div>

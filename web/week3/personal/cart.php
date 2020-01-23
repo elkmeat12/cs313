@@ -92,10 +92,8 @@
                     <button onclick="removeCart('chip1')" class="btn btn-primary float-right">Remove</button>
                   </div>
                 </div>
-                <span id="chip1_report"></span>
               </div>
-          <?php
-              }
+          <?php   }
             }
           ?>
 
