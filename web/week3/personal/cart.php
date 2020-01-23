@@ -60,7 +60,7 @@
           <a href="prove3.php" class="list-group-item">Back to Browse</a>
         </div>
 
-        <button onclick="window.location.href = 'checkout.php';">Checkout</button>
+        <button onclick="window.location.href = 'checkout.php';" class="btn btn-primary">Checkout</button>
 
       </div>
       <!-- /.col-lg-3 -->
@@ -214,9 +214,9 @@
           <?php
             if(isset($_COOKIE["chip1"]) && isset($_COOKIE["chip2"]) && isset($_COOKIE["drink1"]) && isset($_COOKIE["drink2"]) && isset($_COOKIE["cookie1"]) && isset($_COOKIE["cookie2"]))
             {
-              if($_COOKIE["chip1"] && $_COOKIE["chip2"] && $_COOKIE["drink1"] && $_COOKIE["drink2"] && $_COOKIE["cookie1"] && $_COOKIE["cookie2"] == 0)
+              if($_COOKIE["chip1"] && $_COOKIE["chip2"] && $_COOKIE["drink1"] && $_COOKIE["drink2"] && $_COOKIE["cookie1"] && $_COOKIE["cookie2"] <= 0)
               {  
-                echo "<p>No items added</p>";
+                echo "No items added";
               }
             }
           ?>
