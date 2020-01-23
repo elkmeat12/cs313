@@ -58,9 +58,9 @@
         <!-- <h2 class="my-4">Browse Snacks</h2> -->
         <div class="list-group my-4">
           <a href="prove3.php" class="list-group-item">Back to Browse</a>
-          <!-- <a href="cookie.html" class="list-group-item">Cookies</a>
-          <a href="drinks.html" class="list-group-item">Drinks</a> -->
         </div>
+
+        <button onclick="window.location.href = 'checkout.php';">Checkout</button>
 
       </div>
       <!-- /.col-lg-3 -->
@@ -213,7 +213,6 @@
 
         </div>
         <!-- /.row -->
-        <button onclick="window.location.href = 'checkout.php';">Checkout</button>
 
       </div>
       <!-- /.col-lg-9 -->
@@ -225,7 +224,7 @@
   <!-- /.container -->
   <br><br>
   <!-- Footer -->
-  <footer class="py-5 bg1">
+  <footer class="py-5 bg1 fixed-bottom">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; The Snack Shop</p>
     </div>
