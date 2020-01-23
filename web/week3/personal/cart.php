@@ -60,7 +60,7 @@
           <a href="prove3.php" class="list-group-item">Back to Browse</a>
         </div>
 
-        <div class="container-fluid bg-dark">
+        <div class="container-fluid bg2 h-75">
           <button onclick="window.location.href = 'checkout.php';" class="btn btn-primary">Checkout</button>
         </div>
       </div>
