@@ -212,9 +212,12 @@
           ?>
 
           <?php
-            if($_COOKIE["chip1"] && $_COOKIE["chip2"] && $_COOKIE["drink1"] && $_COOKIE["drink2"] && $_COOKIE["cookie1"] && $_COOKIE["cookie2"] == 0)
-            {  
-              echo "<p>No items added</p>";
+            if(isset($_COOKIE["chip1"]) && isset($_COOKIE["chip2"]) && isset($_COOKIE["drink1"]) && isset($_COOKIE["drink2"]) && isset($_COOKIE["cookie1"]) && isset($_COOKIE["cookie2"]))
+            {
+              if($_COOKIE["chip1"] && $_COOKIE["chip2"] && $_COOKIE["drink1"] && $_COOKIE["drink2"] && $_COOKIE["cookie1"] && $_COOKIE["cookie2"] == 0)
+              {  
+                echo "<p>No items added</p>";
+              }
             }
           ?>
 
