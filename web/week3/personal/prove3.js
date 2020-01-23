@@ -20,10 +20,10 @@ function addItem(item) {
       document.cookie = item+"="+x+expire+"; path=/";
    }
 
-   // alert(text);
-   document.getElementById(item+"_report").innerHTML = text;
-   var $it = $('#'+item+"_report");
-   $it.fadeIn(function(){ $it.next().fadeOut(); });
+   alert(text);
+   // document.getElementById(item+"_report").innerHTML = text;
+   // var $it = $('#'+item+"_report");
+   // $it.fadeIn(function(){ $it.next().fadeOut(); });
 
 
    // var totalCost = 0;
@@ -58,10 +58,10 @@ function adjustCart(item) {
      var expires = "; expires="+date.toGMTString();
      document.cookie = item+"="+x+expires+"; path=/";
    }
-   // alert(text);
-   document.getElementById(item+"_report").innerHTML = text;
-   var $it = $('#'+item+"_report");
-   $it.fadeIn(function(){ $it.next().fadeOut(); });
+   alert(text);
+   // document.getElementById(item+"_report").innerHTML = text;
+   // var $it = $('#'+item+"_report");
+   // $it.fadeIn(function(){ $it.next().fadeOut(); });
    window.location.href = 'cart.php';
 }
 
@@ -81,9 +81,9 @@ function removeCart(item) {
    
    document.getElementById(item+"_report").innerHTML = text;
 
-   // alert(text);
-   document.getElementById(item+"_report").innerHTML = text;
-   var $it = $('#'+item+"_report");
-   $it.fadeIn(function(){ $it.next().fadeOut(); });
+   alert(text);
+   // document.getElementById(item+"_report").innerHTML = text;
+   // var $it = $('#'+item+"_report");
+   // $it.fadeIn(function(){ $it.next().fadeOut(); });
    window.location.href = 'cart.php';
 }
