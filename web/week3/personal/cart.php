@@ -74,7 +74,7 @@
         <div class="row">
 
           <?php
-            if (isset($_COOKIE["chip1"])) {
+            if(isset($_COOKIE["chip1"])) {
               if ($_COOKIE["chip1"] > 0) { ?>
                 <!-- <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">

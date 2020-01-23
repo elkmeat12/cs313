@@ -14,7 +14,7 @@ function addItem(item) {
    {
       text = "Added to Cart";
 
-      var date = new Date(0);
+      var date = new Date();
       date.setTime(date.getTime()+(86400 * 30));
       var expire = "; expires="+date.toGMTString();
       document.cookie = item+"="+x+expire+"; path=/";

@@ -89,11 +89,11 @@
                 <p class="card-text">DORITOS FLAMIN' HOT Limon introduces a new Flamin' Hot experience, bringing the same signature heat but adding a twist of lime.</p>
               </div>
               <div class="card-footer">
-                <input id="chip1" name="chip1" type="number" value="1" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                <input id="chip1" name="chip1" type="number" value="0" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('chip1')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
-            <span id="chip1_report">.</span>
+            <span id="chip1_report"></span>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
@@ -111,6 +111,7 @@
                 <button onclick="addItem('chip2')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
+            <span id="chip2_report"></span>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
@@ -128,6 +129,7 @@
                 <button onclick="addItem('drink1')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
+            <span id="drink1_report"></span>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
@@ -145,6 +147,7 @@
                 <button onclick="addItem('drink2')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
+            <span id="drink2_report"></span>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
@@ -162,6 +165,7 @@
                 <button onclick="addItem('cookie1')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
+            <span id="cookie1_report"></span>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
@@ -179,6 +183,7 @@
                 <button onclick="addItem('cookie2')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
+            <span id="cookie1_report"></span>
           </div>
 
         </div>
