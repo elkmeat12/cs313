@@ -69,17 +69,18 @@ function removeCart(item) {
    var x, text;
 
    // Get the value of the input field with id=item
-   x = document.getElementById(item).value;
-
+   // x = document.getElementById(item).value;
+   document.getElementById(item).value = 0;
    text = "Item Removed, reload page";
 
    //https://stackoverflow.com/questions/5045053/set-cookie-wih-js-read-with-php-problem
-   var date = new Date();
-   date.setTime(date.getTime()+(-86400 * 30)); //expires in 1 day
-   var expires = "; expires="+date.toGMTString();
-   document.cookie = item+"="+x+expires+"; path=/";
+   // var date = new Date();
+   // date.setTime(date.getTime()+(-86400 * 30)); //expires in 1 day
+   // date.setTime(0);
+   // var expires = "; expires="+date.toGMTString();
+   // document.cookie = item+"="+x+expires+"; path=/";
    
-   document.getElementById(item+"_report").innerHTML = text;
+   // document.getElementById(item+"_report").innerHTML = text;
 
    alert(text);
    // document.getElementById(item+"_report").innerHTML = text;
