@@ -75,23 +75,69 @@
 
           <?php
             if (isset($_COOKIE["chip1"])) {
-              if ($_COOKIE["chip1"] >= 0) { ?>
-                <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <img class="card-img-top img-center" src="images/chips.jpeg" alt="Doritos Chips">
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      Flamin Hot Doritos
-                    </h4>
-                    <h5>$2.99</h5>
-                    <input name="chip1" id="chip1" type="number" value="<?php echo $_COOKIE["chip1"]; ?>" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+              if ($_COOKIE["chip1"] > 0) { ?>
+                <!-- <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100">
+                    <img class="card-img-top img-center" src="images/chips.jpeg" alt="Doritos Chips">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Flamin Hot Doritos
+                      </h4>
+                      <h5>$2.99</h5>
+                      <input name="chip1" id="chip1" type="number" value="<?php echo $_COOKIE["chip1"]; ?>" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                    </div>
+                    <div class="card-footer">
+                      <button onclick="adjustCart('chip1')" class="btn btn-primary float-right">Adjust</button>
+                      <button onclick="removeCart('chip1')" class="btn btn-primary float-right">Remove</button>
+                    </div>
                   </div>
-                  <div class="card-footer">
-                    <button onclick="adjustCart('chip1')" class="btn btn-primary float-right">Adjust</button>
-                    <button onclick="removeCart('chip1')" class="btn btn-primary float-right">Remove</button>
-                  </div>
-                </div>
-              </div>
+                </div> -->
+                <p>Chip 1 selected</p>
+          <?php   }
+            }
+          ?>
+
+          <?php
+            if (isset($_COOKIE["chip2"])) {
+              if ($_COOKIE["chip2"] > 0) { ?>
+                
+                <p>Chip 2 selected</p>
+          <?php   }
+            }
+          ?>
+
+          <?php
+            if (isset($_COOKIE["drink1"])) {
+              if ($_COOKIE["drink1"] > 0) { ?>
+                
+                <p>Drink 1 selected</p>
+          <?php   }
+            }
+          ?>
+
+          <?php
+            if (isset($_COOKIE["drink2"])) {
+              if ($_COOKIE["drink2"] > 0) { ?>
+                
+                <p>Drink 2 selected</p>
+          <?php   }
+            }
+          ?>
+
+          <?php
+            if (isset($_COOKIE["cookie1"])) {
+              if ($_COOKIE["cookie1"] > 0) { ?>
+                
+                <p>Cookie 1 selected</p>
+          <?php   }
+            }
+          ?>
+
+          <?php
+            if (isset($_COOKIE["cookie2"])) {
+              if ($_COOKIE["cookie2"] > 0) { ?>
+                
+                <p>Cookie 2 selected</p>
           <?php   }
             }
           ?>
