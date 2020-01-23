@@ -201,7 +201,7 @@
                       <h4 class="card-title">
                         Oreos
                       </h4>
-                      <h5>$2.99</h5>
+                      <h5>$2.99 <?php $_COOKIE["cookie2"] * 2.99?></h5>
                       <input name="cookie2" id="cookie2" type="number" value="<?php echo $_COOKIE["cookie2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                     </div>
                     <div class="card-footer">
