@@ -89,7 +89,7 @@
                 <p class="card-text">DORITOS FLAMIN' HOT Limon introduces a new Flamin' Hot experience, bringing the same signature heat but adding a twist of lime.</p>
               </div>
               <div class="card-footer">
-                <input id="chip1" name="chip1" type="number" value="0" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                <input id="chip1" name="chip1" type="number" value="0" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('chip1')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
@@ -107,7 +107,7 @@
                 <p class="card-text">It all starts with farm-grown potatoes, cooked and seasoned to perfection. So every LAY'S potato chip is perfectly crispy and delicious. Happiness in Every Bite.</p>
               </div>
               <div class="card-footer">
-              <input name="chip2" id="chip2" type="number" value="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+              <input name="chip2" id="chip2" type="number" value="0" min="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('chip2')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
@@ -125,11 +125,10 @@
                 <p class="card-text">Mountain Dew, the original, the one that started it all. MTN DEW exhilarates and quenches with its one of a kind taste.</p>
               </div>
               <div class="card-footer">
-              <input name="drink1" id="drink1" type="number" value="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+              <input name="drink1" id="drink1" type="number" value="0" min="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('drink1')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
-            <span id="drink1_report"></span>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
@@ -143,11 +142,10 @@
                 <p class="card-text">Gatorade Thirst Quencher hydrates better than water, which is why it's trusted by some of the world's best athletes.</p>
               </div>
               <div class="card-footer">
-              <input name="drink2" id="drink2" type="number" value="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+              <input name="drink2" id="drink2" type="number" value="0" min="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('drink2')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
-            <span id="drink2_report"></span>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
@@ -161,11 +159,10 @@
                 <p class="card-text"> Chewy Chocolate Chip Cookies are the CHIPS AHOY! cookies you know and love, but baked to be perfectly soft and chewy. </p>
               </div>
               <div class="card-footer">
-                <input name="cookie1" id="cookie1" type="number" value="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                <input name="cookie1" id="cookie1" type="number" value="0" min="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('cookie1')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
-            <span id="cookie1_report"></span>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
@@ -179,11 +176,10 @@
                 <p class="card-text">OREO Mega Stuf Chocolate Sandwich Cookies are for those who like even more creme in their OREO cookies. </p>
               </div>
               <div class="card-footer">
-                <input name="cookie2" id="cookie2" type="number" value="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                <input name="cookie2" id="cookie2" type="number" value="0" min="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('cookie2')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
-            <span id="cookie1_report"></span>
           </div>
 
         </div>

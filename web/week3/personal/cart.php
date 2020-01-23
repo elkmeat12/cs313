@@ -107,7 +107,7 @@
                         Classic Lays
                       </h4>
                       <h5>$3.50</h5>
-                      <input name="chip2" id="chip2" type="number" value="<?php echo $_COOKIE["chip2"]; ?>" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                      <input name="chip2" id="chip2" type="number" value="<?php echo $_COOKIE["chip2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                     </div>
                     <div class="card-footer">
                       <button onclick="adjustCart('chip2')" class="btn btn-primary float-left">Adjust</button>
@@ -130,7 +130,7 @@
                         Mountain Dew
                       </h4>
                       <h5>$7.49</h5>
-                      <input name="drink1" id="drink1" type="number" value="<?php echo $_COOKIE["drink1"]; ?>" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                      <input name="drink1" id="drink1" type="number" value="<?php echo $_COOKIE["drink1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                     </div>
                     <div class="card-footer">
                       <button onclick="adjustCart('drink1')" class="btn btn-primary float-left">Adjust</button>
@@ -153,7 +153,7 @@
                         Gatorade Variety Pack
                       </h4>
                       <h5>$12.59</h5>
-                      <input name="drink2" id="drink2" type="number" value="<?php echo $_COOKIE["drink2"]; ?>" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                      <input name="drink2" id="drink2" type="number" value="<?php echo $_COOKIE["drink2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                     </div>
                     <div class="card-footer">
                       <button onclick="adjustCart('drink2')" class="btn btn-primary float-left">Adjust</button>
@@ -176,7 +176,7 @@
                         Chips Ahoy
                       </h4>
                       <h5>$2.53</h5>
-                      <input name="cookie1" id="cookie1" type="number" value="<?php echo $_COOKIE["cookie1"]; ?>" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                      <input name="cookie1" id="cookie1" type="number" value="<?php echo $_COOKIE["cookie1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                     </div>
                     <div class="card-footer">
                       <button onclick="adjustCart('cookie1')" class="btn btn-primary float-left">Adjust</button>
@@ -199,7 +199,7 @@
                         Oreos
                       </h4>
                       <h5>$2.99</h5>
-                      <input name="cookie2" id="cookie2" type="number" value="<?php echo $_COOKIE["cookie2"]; ?>" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                      <input name="cookie2" id="cookie2" type="number" value="<?php echo $_COOKIE["cookie2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                     </div>
                     <div class="card-footer">
                       <button onclick="adjustCart('cookie2')" class="btn btn-primary float-left">Adjust</button>

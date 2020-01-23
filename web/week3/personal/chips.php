@@ -88,7 +88,7 @@
                 <p class="card-text">DORITOS FLAMIN' HOT Limon introduces a new Flamin' Hot experience, bringing the same signature heat but adding a twist of lime.</p>
               </div>
               <div class="card-footer">
-                <input name="chip1" id="chip1" type="number" value="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                <input id="chip1" name="chip1" type="number" value="0" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('chip1')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
@@ -105,7 +105,7 @@
                 <p class="card-text">It all starts with farm-grown potatoes, cooked and seasoned to perfection. So every LAY'S potato chip is perfectly crispy and delicious. Happiness in Every Bite.</p>
               </div>
               <div class="card-footer">
-                <input name="chip2" id="chip2" type="number" value="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+              <input name="chip2" id="chip2" type="number" value="0" min="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('chip2')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>

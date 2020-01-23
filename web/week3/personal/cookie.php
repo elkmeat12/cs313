@@ -77,7 +77,7 @@
 
         <div class="row">
 
-         <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <img class="card-img-top img-center" src="images/ahoy.jpeg" alt="Chips Ahoy">
               <div class="card-body">
@@ -88,7 +88,7 @@
                 <p class="card-text"> Chewy Chocolate Chip Cookies are the CHIPS AHOY! cookies you know and love, but baked to be perfectly soft and chewy. </p>
               </div>
               <div class="card-footer">
-                <input name="cookie1" id="cookie1" type="number" value="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                <input name="cookie1" id="cookie1" type="number" value="0" min="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('cookie1')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
@@ -105,7 +105,7 @@
                 <p class="card-text">OREO Mega Stuf Chocolate Sandwich Cookies are for those who like even more creme in their OREO cookies. </p>
               </div>
               <div class="card-footer">
-                <input name="cookie2" id="cookie2" type="number" value="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+                <input name="cookie2" id="cookie2" type="number" value="0" min="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('cookie2')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>

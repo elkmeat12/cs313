@@ -77,7 +77,7 @@
 
         <div class="row">
 
-         <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <img class="card-img-top img-center" src="images/dew.jpeg" alt="Mountain Dew">
               <div class="card-body">
@@ -88,7 +88,7 @@
                 <p class="card-text">Mountain Dew, the original, the one that started it all. MTN DEW exhilarates and quenches with its one of a kind taste.</p>
               </div>
               <div class="card-footer">
-                <input name="drink1" id="drink1" type="number" value="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+              <input name="drink1" id="drink1" type="number" value="0" min="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('drink1')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
@@ -105,7 +105,7 @@
                 <p class="card-text">Gatorade Thirst Quencher hydrates better than water, which is why it's trusted by some of the world's best athletes.</p>
               </div>
               <div class="card-footer">
-                <input name="drink2" id="drink2" type="number" value="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
+              <input name="drink2" id="drink2" type="number" value="0" min="0" max="10" maxlength="2" style="width: 25%;" class="float-left text-center"/>
                 <button onclick="addItem('drink2')" class="btn btn-primary float-right">Add to Cart</button>
               </div>
             </div>
