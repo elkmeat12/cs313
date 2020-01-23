@@ -5,3 +5,28 @@ body {
  .bg1 {
    background-color: #706aa4;
  }
+
+ .img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+ }
+
+ .top-padding {
+   padding-top: 56px;
+ }
+
+ .float-left {
+   float: left;
+ }
+
+ .float-right {
+   float: right;
+ }
+
+ .text-center {
+   text-align: center;
+ }
