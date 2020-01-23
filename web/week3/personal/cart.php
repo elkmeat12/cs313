@@ -211,6 +211,13 @@
             }
           ?>
 
+          <?php
+            if($_COOKIE["chip1"] && $_COOKIE["chip2"] && $_COOKIE["drink1"] && $_COOKIE["drink2"] && $_COOKIE["cookie1"] && $_COOKIE["cookie2"] == 0)
+            {  
+              echo "<p>No items added</p>";
+            }
+          ?>
+
         </div>
         <!-- /.row -->
 
