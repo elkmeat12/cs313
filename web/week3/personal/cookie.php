@@ -66,11 +66,6 @@
 
       <div class="col-lg-9">
 
-        <!-- banner -->
-        <!-- <div class="my-4">
-          <img class="d-block img-fluid" src="images/store2.jpg" alt="Store Image">
-        </div> -->
-
         <h4 class="my-4">Cookies</h4>
 
         <hr>

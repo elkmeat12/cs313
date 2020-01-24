@@ -53,12 +53,6 @@
 
     <div class="row">
 
-      <!-- <div class="col-lg-3">
-        <div class="list-group my-4">
-          <a href="prove3.php" class="list-group-item">Back to Browse</a>
-        </div>
-
-      </div> -->
       <!-- /.col-lg-3 -->
 
       <div class="col-lg-9">
