@@ -84,7 +84,7 @@
                 <h4 class="card-title">
                   Chips Ahoy
                 </h4>
-                <h5>$2.53</h5>
+                <h5>$2.53 ea.</h5>
                 <p class="card-text"> Chewy Chocolate Chip Cookies are the CHIPS AHOY! cookies you know and love, but baked to be perfectly soft and chewy. </p>
               </div>
               <div class="card-footer">
@@ -101,7 +101,7 @@
                 <h4 class="card-title">
                   Oreos
                 </h4>
-                <h5>$2.99</h5>
+                <h5>$2.99 ea.</h5>
                 <p class="card-text">OREO Mega Stuf Chocolate Sandwich Cookies are for those who like even more creme in their OREO cookies. </p>
               </div>
               <div class="card-footer">

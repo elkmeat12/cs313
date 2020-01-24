@@ -84,7 +84,7 @@
                 <h4 class="card-title">
                   Mountain Dew
                 </h4>
-                <h5>$7.49</h5>
+                <h5>$7.49 ea.</h5>
                 <p class="card-text">Mountain Dew, the original, the one that started it all. MTN DEW exhilarates and quenches with its one of a kind taste.</p>
               </div>
               <div class="card-footer">
@@ -101,7 +101,7 @@
                 <h4 class="card-title">
                   Gatorade Variety Pack
                 </h4>
-                <h5>$12.59</h5>
+                <h5>$12.59 ea.</h5>
                 <p class="card-text">Gatorade Thirst Quencher hydrates better than water, which is why it's trusted by some of the world's best athletes.</p>
               </div>
               <div class="card-footer">

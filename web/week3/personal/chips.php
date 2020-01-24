@@ -84,7 +84,7 @@
                 <h4 class="card-title">
                   Flamin Hot Doritos
                 </h4>
-                <h5>$2.99</h5>
+                <h5>$2.99 ea.</h5>
                 <p class="card-text">DORITOS FLAMIN' HOT Limon introduces a new Flamin' Hot experience, bringing the same signature heat but adding a twist of lime.</p>
               </div>
               <div class="card-footer">
@@ -101,7 +101,7 @@
                 <h4 class="card-title">
                   Classic Lays
                 </h4>
-                <h5>$3.50</h5>
+                <h5>$3.50 ea.</h5>
                 <p class="card-text">It all starts with farm-grown potatoes, cooked and seasoned to perfection. So every LAY'S potato chip is perfectly crispy and delicious. Happiness in Every Bite.</p>
               </div>
               <div class="card-footer">

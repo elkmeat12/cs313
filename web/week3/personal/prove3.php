@@ -85,7 +85,7 @@
                 <h4 class="card-title">
                   Flamin Hot Doritos
                 </h4>
-                <h5>$2.99</h5>
+                <h5>$2.99 ea.</h5>
                 <p class="card-text">DORITOS FLAMIN' HOT Limon introduces a new Flamin' Hot experience, bringing the same signature heat but adding a twist of lime.</p>
               </div>
               <div class="card-footer">
@@ -103,7 +103,7 @@
                 <h4 class="card-title">
                   Classic Lays
                 </h4>
-                <h5>$3.50</h5>
+                <h5>$3.50 ea.</h5>
                 <p class="card-text">It all starts with farm-grown potatoes, cooked and seasoned to perfection. So every LAY'S potato chip is perfectly crispy and delicious. Happiness in Every Bite.</p>
               </div>
               <div class="card-footer">
@@ -121,7 +121,7 @@
                 <h4 class="card-title">
                   Mountain Dew
                 </h4>
-                <h5>$7.49</h5>
+                <h5>$7.49 ea.</h5>
                 <p class="card-text">Mountain Dew, the original, the one that started it all. MTN DEW exhilarates and quenches with its one of a kind taste.</p>
               </div>
               <div class="card-footer">
@@ -138,7 +138,7 @@
                 <h4 class="card-title">
                   Gatorade Variety Pack
                 </h4>
-                <h5>$12.59</h5>
+                <h5>$12.59 ea.</h5>
                 <p class="card-text">Gatorade Thirst Quencher hydrates better than water, which is why it's trusted by some of the world's best athletes.</p>
               </div>
               <div class="card-footer">
@@ -155,7 +155,7 @@
                 <h4 class="card-title">
                   Chips Ahoy
                 </h4>
-                <h5>$2.53</h5>
+                <h5>$2.53 ea.</h5>
                 <p class="card-text"> Chewy Chocolate Chip Cookies are the CHIPS AHOY! cookies you know and love, but baked to be perfectly soft and chewy. </p>
               </div>
               <div class="card-footer">
@@ -172,7 +172,7 @@
                 <h4 class="card-title">
                   Oreos
                 </h4>
-                <h5>$2.99</h5>
+                <h5>$2.99 ea.</h5>
                 <p class="card-text">OREO Mega Stuf Chocolate Sandwich Cookies are for those who like even more creme in their OREO cookies. </p>
               </div>
               <div class="card-footer">
