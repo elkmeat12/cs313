@@ -53,14 +53,12 @@
 
     <div class="row">
 
-      <div class="col-lg-3">
-
-        <!-- <h2 class="my-4">Browse Snacks</h2> -->
+      <!-- <div class="col-lg-3">
         <div class="list-group my-4">
           <a href="prove3.php" class="list-group-item">Back to Browse</a>
         </div>
 
-      </div>
+      </div> -->
       <!-- /.col-lg-3 -->
 
       <div class="col-lg-9">
@@ -68,9 +66,6 @@
         <h4 class="my-4">Snacks Added to Cart</h4>
 
         <hr>
-
-        <div class="row">
-
          <?php
             $fname = htmlspecialchars($_POST["fname"]);
             $lname = htmlspecialchars($_POST["lname"]);
@@ -82,6 +77,8 @@
             echo "Thank you for your order $fname $lname!<br>";
             echo "The items you purchase below will be delivered to $city, $state $zip.";
          ?>
+
+        <div class="row">
 
           <?php
             if(isset($_COOKIE["chip1"])) {
