@@ -237,7 +237,7 @@
   <!-- /.container -->
   <br><br>
   <!-- Footer -->
-  <footer class="py-5 bg1 fixed-bottom">
+  <footer class="py-5 bg1">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; The Snack Shop</p>
     </div>
