@@ -90,12 +90,8 @@
                       <h4 class="card-title">
                         Flamin Hot Doritos
                       </h4>
-                      <h5>$2.99</h5>
-                      <input name="chip1" id="chip1" type="number" value="<?php echo $_COOKIE["chip1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="adjustCart('chip1')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('chip1')" class="btn btn-danger float-right">Remove</button>
+                      <h5>$2.99 ea.</h5>
+                      <input name="chip1" id="chip1" type="number" value="<?php echo $_COOKIE["chip1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center" disabled/>
                     </div>
                   </div>
                 </div>
@@ -113,13 +109,9 @@
                       <h4 class="card-title">
                         Classic Lays
                       </h4>
-                      <h5>$3.50</h5>
+                      <h5>$3.50 ea.</h5>
                       <input name="chip2" id="chip2" type="number" value="<?php echo $_COOKIE["chip2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center" disabled/>
                     </div>
-                    <!-- <div class="card-footer">
-                      <button onclick="adjustCart('chip2')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('chip2')" class="btn btn-danger float-right">Remove</button>
-                    </div> -->
                   </div>
                 </div>
           <?php   }
@@ -136,12 +128,8 @@
                       <h4 class="card-title">
                         Mountain Dew
                       </h4>
-                      <h5>$7.49</h5>
-                      <input name="drink1" id="drink1" type="number" value="<?php echo $_COOKIE["drink1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="adjustCart('drink1')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('drink1')" class="btn btn-danger float-right">Remove</button>
+                      <h5>$7.49 ea.</h5>
+                      <input name="drink1" id="drink1" type="number" value="<?php echo $_COOKIE["drink1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center" disabled/>
                     </div>
                   </div>
                 </div>
@@ -159,12 +147,8 @@
                       <h4 class="card-title">
                         Gatorade Variety Pack
                       </h4>
-                      <h5>$12.59</h5>
-                      <input name="drink2" id="drink2" type="number" value="<?php echo $_COOKIE["drink2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="adjustCart('drink2')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('drink2')" class="btn btn-danger float-right">Remove</button>
+                      <h5>$12.59 ea.</h5>
+                      <input name="drink2" id="drink2" type="number" value="<?php echo $_COOKIE["drink2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center" disabled/>
                     </div>
                   </div>
                 </div>
@@ -182,12 +166,8 @@
                       <h4 class="card-title">
                         Chips Ahoy
                       </h4>
-                      <h5>$2.53</h5>
-                      <input name="cookie1" id="cookie1" type="number" value="<?php echo $_COOKIE["cookie1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="adjustCart('cookie1')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('cookie1')" class="btn btn-danger float-right">Remove</button>
+                      <h5>$2.53 ea.</h5>
+                      <input name="cookie1" id="cookie1" type="number" value="<?php echo $_COOKIE["cookie1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center" disabled/>
                     </div>
                   </div>
                 </div>
@@ -205,26 +185,12 @@
                       <h4 class="card-title">
                         Oreos
                       </h4>
-                      <h5>$2.99</h5>
-                      <input name="cookie2" id="cookie2" type="number" value="<?php echo $_COOKIE["cookie2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="adjustCart('cookie2')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('cookie2')" class="btn btn-danger float-right">Remove</button>
+                      <h5>$2.99 ea.</h5>
+                      <input name="cookie2" id="cookie2" type="number" value="<?php echo $_COOKIE["cookie2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center" disabled/>
                     </div>
                   </div>
                 </div>
           <?php   }
-            }
-          ?>
-
-          <?php
-            if(isset($_COOKIE["chip1"]) && isset($_COOKIE["chip2"]) && isset($_COOKIE["drink1"]) && isset($_COOKIE["drink2"]) && isset($_COOKIE["cookie1"]) && isset($_COOKIE["cookie2"]))
-            {
-              if($_COOKIE["chip1"] && $_COOKIE["chip2"] && $_COOKIE["drink1"] && $_COOKIE["drink2"] && $_COOKIE["cookie1"] && $_COOKIE["cookie2"] <= 0)
-              {  
-                echo "No items added";
-              }
             }
           ?>
 
