@@ -45,7 +45,7 @@ function removeCart(item) {
    // Get the value of the input field with id=item
    x = document.getElementById(item).value;
    x = 0;
-   text = "Item Removed, reload page";
+   text = "Item Removed";
 
    //https://stackoverflow.com/questions/5045053/set-cookie-wih-js-read-with-php-problem
    var date = new Date();
