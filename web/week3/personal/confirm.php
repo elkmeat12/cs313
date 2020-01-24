@@ -196,7 +196,6 @@
 
         </div>
         <!-- /.row -->
-        <button onclick="window.location.href = 'checkout.php';" class="btn btn-primary">Checkout</button>
       </div>
       <!-- /.col-lg-9 -->
 
