@@ -88,3 +88,13 @@ footer {
    justify-content: space-evenly;
    align-items: center;
 }
+
+a.list {
+   font-size: 18px;
+   text-decoration: none;
+   color: #133945;
+}
+
+a.list:hover {
+   color: #0000ff;
+}
