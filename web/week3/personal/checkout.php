@@ -89,15 +89,10 @@
                   </div>
                </div>
                <div class="col-md-4 mb-3">
-                  <label for="validationCustomUsername">Username</label>
-                  <div class="input-group">
-                  <div class="input-group-prepend">
-                     <span class="input-group-text" id="inputGroupPrepend">@</span>
-                  </div>
-                  <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                  <label for="validationCustomUsername">Email</label>
+                  <input type="text" class="form-control" id="validationCustomEmail" placeholder="Email" required>
                   <div class="invalid-feedback">
-                     Please choose a username.
-                  </div>
+                     Please add an email.
                   </div>
                </div>
             </div>
@@ -124,17 +119,7 @@
                   </div>
                </div>
             </div>
-            <!-- <div class="form-group">
-               <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                  <label class="form-check-label" for="invalidCheck">
-                  Agree to terms and conditions
-                  </label>
-                  <div class="invalid-feedback">
-                  You must agree before submitting.
-                  </div>
-               </div>
-            </div> -->
+            <br>
             <button class="btn btn-primary" type="submit">Confirm Order</button>
          </form>
 
