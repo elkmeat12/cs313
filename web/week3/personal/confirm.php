@@ -63,7 +63,7 @@
 
       <div class="col-lg-9">
 
-        <h4 class="my-4">Snacks Added to Cart</h4>
+        <h4 class="my-4">Delivery Order</h4>
 
         <hr>
          <?php
@@ -78,7 +78,7 @@
             echo "The items you purchase below will be delivered to $city, $state $zip.";
          ?>
 
-        <div class="row">
+        <div class="row my-4">
 
           <?php
             if(isset($_COOKIE["chip1"])) {
@@ -241,7 +241,7 @@
   <!-- /.container -->
   <br><br>
   <!-- Footer -->
-  <footer class="py-5 bg1 fixed-bottom">
+  <footer class="py-5 bg1">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; The Snack Shop</p>
     </div>
