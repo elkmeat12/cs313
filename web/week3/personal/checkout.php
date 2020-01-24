@@ -124,7 +124,7 @@
                   </div>
                </div>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                   <label class="form-check-label" for="invalidCheck">
@@ -134,8 +134,8 @@
                   You must agree before submitting.
                   </div>
                </div>
-            </div>
-            <button class="btn btn-primary" type="submit">Submit form</button>
+            </div> -->
+            <button class="btn btn-primary" type="submit">Confirm Order</button>
          </form>
 
          <script>
