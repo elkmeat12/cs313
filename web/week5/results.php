@@ -7,6 +7,8 @@
    $scripture = $db->prepare("SELECT * FROM scripture");
    $scripture->execute();
 
+   echo "<h1>Scripture Resources</h1>";
+
    while ($row = $scripture->fetch(PDO::FETCH_ASSOC))
    {
       $book = $row["book"];
@@ -17,6 +19,10 @@
       if ($book == $scripture)
       {
          echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"</p>";
+      }
+      else
+      {
+         echo "<p>Scripture not found</p>";
       }
    }
 ?>
