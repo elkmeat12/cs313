@@ -16,7 +16,7 @@
       $verse = $row["verse"];
       $content = $row["content"];
 
-      while ($book_name == $book)
+      if ($book_name == $book)
       {
          echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"</p>";
       }

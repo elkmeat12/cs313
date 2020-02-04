@@ -33,7 +33,7 @@
    ?>
 
    <form action="results.php" method="POST">
-   Book: <input type="text" name="book"><br>
+   Book: <input type="text" name="book"><br><br>
    <input type="submit">
    </form>
 
