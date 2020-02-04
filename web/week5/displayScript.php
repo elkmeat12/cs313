@@ -1,5 +1,5 @@
 <?php
-   require "dbConnect.php";
+   require "../temp/dbConnect.php";
    $db = get_db();
 ?>
 
@@ -22,20 +22,20 @@
 
       while ($row = $statement->fetch(PDO::FETCH_ASSOC))
       {
-         $book = $row['book'];
-         $chapter = $row['row'];
-         $verse = $row['verse'];
-         $content = $row['content'];
+         $book = $row["book"];
+         $chapter = $row["row"];
+         $verse = $row["verse"];
+         $content = $row["content"];
 
          echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"</p>";
       }
 
    ?>
 
-   <form action="results.php" method="POST">
+   <!-- <form action="results.php" method="POST">
    Select a Book: <input type="text" name="book"><br>
    <input type="submit">
-   </form>
+   </form> -->
 
 </body>
 </html>
