@@ -32,10 +32,10 @@
 
    ?>
 
-   <!-- <form action="results.php" method="POST">
+   <form action="results.php" method="POST">
    Select a Book: <input type="text" name="book"><br>
    <input type="submit">
-   </form> -->
+   </form>
 
 </body>
 </html>
