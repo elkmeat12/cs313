@@ -3,7 +3,6 @@
    $db = get_db();
 
    $book_name = htmlspecialchars($_POST["book"]);
-   $book;
 
    $scripture = $db->prepare("SELECT * FROM scripture");
    $scripture->execute();
@@ -17,14 +16,9 @@
       $verse = $row["verse"];
       $content = $row["content"];
 
-   }
-   
-   if ($book_name == $book)
-   {
-      echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"</p>";
-   }
-   else
-   {
-      echo "<p>Scripture not found</p>";
+      while ($book_name == $book)
+      {
+         echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"</p>";
+      }
    }
 ?>
