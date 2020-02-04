@@ -2,7 +2,7 @@
    require "../temp/dbConnect.php";
    $db = get_db();
 
-   $book = htmlspecialchars($_POST["book"]);
+   $book_name = htmlspecialchars($_POST["book"]);
 
    $scripture = $db->prepare("SELECT * FROM scripture");
    $scripture->execute();
@@ -16,7 +16,7 @@
       $verse = $row["verse"];
       $content = $row["content"];
 
-      if ($book == $scripture)
+      if ($book_name == $book)
       {
          echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"</p>";
       }
