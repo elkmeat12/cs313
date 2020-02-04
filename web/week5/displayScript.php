@@ -17,10 +17,10 @@
 
    <?php
 
-      $statement = $db->prepare("SELECT * FROM scripture");
-      $statement->execute();
+      $scripture = $db->prepare("SELECT * FROM scripture");
+      $scripture->execute();
 
-      while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+      while ($row = $scripture->fetch(PDO::FETCH_ASSOC))
       {
          $book = $row["book"];
          $chapter = $row["chapter"];
@@ -33,7 +33,7 @@
    ?>
 
    <form action="results.php" method="POST">
-   Select a Book: <input type="text" name="book"><br>
+   Book: <input type="text" name="book"><br>
    <input type="submit">
    </form>
 
