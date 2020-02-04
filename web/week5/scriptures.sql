@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS scripture;
+
 CREATE TABLE scripture
 ( id        SERIAL      NOT NULL PRIMARY KEY
 , book      VARCHAR(50) NOT NULL
