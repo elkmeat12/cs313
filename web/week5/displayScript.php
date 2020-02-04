@@ -23,7 +23,7 @@
       while ($row = $statement->fetch(PDO::FETCH_ASSOC))
       {
          $book = $row["book"];
-         $chapter = $row["row"];
+         $chapter = $row["chapter"];
          $verse = $row["verse"];
          $content = $row["content"];
 
