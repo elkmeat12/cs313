@@ -20,5 +20,9 @@
       {
          echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"</p>";
       }
+      else
+      {
+         echo "Scripture not found";
+      }
    }
 ?>

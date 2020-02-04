@@ -15,23 +15,6 @@
 
    <h1>Scripture Resources</h1>
 
-   <?php
-
-      $scripture = $db->prepare("SELECT * FROM scripture");
-      $scripture->execute();
-
-      while ($row = $scripture->fetch(PDO::FETCH_ASSOC))
-      {
-         $book = $row["book"];
-         $chapter = $row["chapter"];
-         $verse = $row["verse"];
-         $content = $row["content"];
-
-         echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"</p>";
-      }
-
-   ?>
-
    <form action="results.php" method="POST">
    Book: <input type="text" name="book"><br><br>
    <input type="submit">
