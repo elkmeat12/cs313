@@ -11,15 +11,13 @@
    {
       $image = $row["image"];
       $name = $row["name"];
-      $type = $row["type"];
       $desc = $row["description"];
 
       echo "<img src=$image style='height: 250px'>";
 
       echo "<p>
             <h3>$name</h3>
-            <br>
-            <strong>$type</strong> - $desc
+            <br>$desc
             </p>";
    }
 ?>
