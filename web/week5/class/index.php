@@ -14,7 +14,7 @@
       $type = $row["type"];
       $desc = $row["description"];
 
-      echo "<img src=$image>";
+      echo "<img src=$image style='height: 250px'>";
 
       echo "<p>
             <h3>$name</h3>
