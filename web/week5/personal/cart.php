@@ -106,7 +106,11 @@
                            </div>
                            </div>
                         </div>
+                        <?=$name . " was purchased"?>
                <?php   }
+               }
+               else {
+                  echo "Nothing was added";
                }
             ?>
          
