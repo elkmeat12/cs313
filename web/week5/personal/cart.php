@@ -110,7 +110,7 @@
                <?php   }
                }
                else {
-                  echo "Nothing was added";
+                  echo "Nothing was added<br>";
                }
             ?>
          
