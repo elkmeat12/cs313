@@ -54,7 +54,7 @@
   </nav>
 
   <!-- Page Content -->
-  <div class="container my-5">
+  <div class="container">
 
     <div class="row">
 
@@ -128,7 +128,7 @@
   <!-- /.container -->
   <br><br>
   <!-- Footer -->
-  <footer class="py-5 bg1 fixed-bottom">
+  <footer class="py-5 bg1">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Hooked</p>
     </div>
