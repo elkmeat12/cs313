@@ -1,2 +1,2 @@
-DELETE FROM category;
 DELETE FROM item;
+DELETE FROM category;

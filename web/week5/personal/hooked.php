@@ -76,7 +76,7 @@
 
          <!-- banner -->
          <div class="my-4">
-            <img class="d-block img-fluid" src="images/store2.jpg" alt="Store Image">
+            <img class="d-block img-fluid" src="/images/fishing.jpg" alt="Fishing Image">
          </div>
 
          <h4>Popular Items</h4>

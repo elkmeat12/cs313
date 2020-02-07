@@ -1,5 +1,5 @@
+DROP TABLE item CASCADE;
 DROP TABLE category;
-DROP TABLE item;
+DROP TABLE customer_order CASCADE;
 DROP TABLE customer;
-DROP TABLE customer_order;
 DROP TABLE order_items;
