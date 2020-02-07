@@ -1,5 +1,7 @@
 <?php
    session_start();
+   require "../../temp/dbConnect.php";
+   $db = get_db();
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +58,7 @@
       <div class="col-lg-3">
 
         <div class="list-group my-4">
-          <a href="prove3.php" class="list-group-item">Back to Browse</a>
+          <a href="hooked.php" class="list-group-item">Back to Browse</a>
         </div>
 
       </div>
@@ -64,149 +66,51 @@
 
       <div class="col-lg-9">
 
-        <h4 class="my-4">Snacks Added to Cart</h4>
+        <h4 class="my-4">Items Added to Cart</h4>
 
         <hr>
 
         <div class="row">
 
-          <?php
-            if(isset($_COOKIE["chip1"])) {
-              if ($_COOKIE["chip1"] > 0) { ?>
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                    <img class="card-img-top img-center" src="images/chips.jpeg" alt="Doritos Chips">
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        Flamin Hot Doritos
-                      </h4>
-                      <h5>$2.99 ea.</h5>
-                      <input name="chip1" id="chip1" type="number" value="<?php echo $_COOKIE["chip1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="adjustCart('chip1')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('chip1')" class="btn btn-danger float-right">Remove</button>
-                    </div>
-                  </div>
-                </div>
-          <?php   }
-            }
-          ?>
+         <!-- GET DATABASE ITEMS  -->
+         <?php
+            $item = $db->prepare("SELECT * FROM item LIMIT 6 OFFSET 3");
+            $item->execute();
 
-          <?php
-            if (isset($_COOKIE["chip2"])) {
-              if ($_COOKIE["chip2"] > 0) { ?>
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                    <img class="card-img-top img-center" src="images/classic.jpg" alt="Classic Lays">
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        Classic Lays
-                      </h4>
-                      <h5>$3.50 ea.</h5>
-                      <input name="chip2" id="chip2" type="number" value="<?php echo $_COOKIE["chip2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="adjustCart('chip2')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('chip2')" class="btn btn-danger float-right">Remove</button>
-                    </div>
-                  </div>
-                </div>
-          <?php   }
-            }
-          ?>
+            while ($iRow = $item->fetch(PDO::FETCH_ASSOC))
+            {
+               $image = $iRow["image"];
+               $name = $iRow["item_name"];
+               $description = $iRow["item_description"];
+               $price = $iRow["price"];
+         ?>
 
-          <?php
-            if (isset($_COOKIE["drink1"])) {
-              if ($_COOKIE["drink1"] > 0) { ?>
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                    <img class="card-img-top img-center" src="images/dew.jpeg" alt="Mountain Dew">
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        Mountain Dew
-                      </h4>
-                      <h5>$7.49 ea.</h5>
-                      <input name="drink1" id="drink1" type="number" value="<?php echo $_COOKIE["drink1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="adjustCart('drink1')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('drink1')" class="btn btn-danger float-right">Remove</button>
-                    </div>
+            <?php
+               if(isset($_COOKIE[$name])) {
+               if ($_COOKIE[$name] > 0) { ?>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                     <div class="card h-100">
+                     <img class="card-img-top img-center" src="images/chips.jpeg" alt="Doritos Chips">
+                     <div class="card-body">
+                        <h4 class="card-title">
+                           <?=$name?>
+                        </h4>
+                        <h5><?=$price . " ea."?></h5>
+                        <input name=<?=$name?> id=<?=$name?> type="number" value="<?php echo $_COOKIE[$name]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
+                     </div>
+                     <div class="card-footer">
+                        <button onclick="adjustCart(<?=$name?>)" class="btn btn-primary float-left">Adjust</button>
+                        <button onclick="removeCart(<?=$name?>)" class="btn btn-danger float-right">Remove</button>
+                     </div>
+                     </div>
                   </div>
-                </div>
-          <?php   }
+            <?php   }
+               }
+            ?>
+         
+         <?php
             }
-          ?>
-
-          <?php
-            if (isset($_COOKIE["drink2"])) {
-              if ($_COOKIE["drink2"] > 0) { ?>
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                    <img class="card-img-top img-center" src="images/gatorade.jpeg" alt="Gatorade">
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        Gatorade Variety Pack
-                      </h4>
-                      <h5>$12.59 ea.</h5>
-                      <input name="drink2" id="drink2" type="number" value="<?php echo $_COOKIE["drink2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="adjustCart('drink2')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('drink2')" class="btn btn-danger float-right">Remove</button>
-                    </div>
-                  </div>
-                </div>
-          <?php   }
-            }
-          ?>
-
-          <?php
-            if (isset($_COOKIE["cookie1"])) {
-              if ($_COOKIE["cookie1"] > 0) { ?>
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                    <img class="card-img-top img-center" src="images/ahoy.jpeg" alt="Chips Ahoy">
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        Chips Ahoy
-                      </h4>
-                      <h5>$2.53 ea.</h5>
-                      <input name="cookie1" id="cookie1" type="number" value="<?php echo $_COOKIE["cookie1"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="adjustCart('cookie1')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('cookie1')" class="btn btn-danger float-right">Remove</button>
-                    </div>
-                  </div>
-                </div>
-          <?php   }
-            }
-          ?>
-
-          <?php
-            if (isset($_COOKIE["cookie2"])) {
-              if ($_COOKIE["cookie2"] > 0) { ?>
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                    <img class="card-img-top img-center" src="images/oreo.jpeg" alt="Oreos">
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        Oreos
-                      </h4>
-                      <h5>$2.99 ea.</h5>
-                      <input name="cookie2" id="cookie2" type="number" value="<?php echo $_COOKIE["cookie2"]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="adjustCart('cookie2')" class="btn btn-primary float-left">Adjust</button>
-                      <button onclick="removeCart('cookie2')" class="btn btn-danger float-right">Remove</button>
-                    </div>
-                  </div>
-                </div>
-          <?php   }
-            }
-          ?>
+         ?>
 
         </div>
         <!-- /.row -->
@@ -223,7 +127,7 @@
   <!-- Footer -->
   <footer class="py-5 bg1 fixed-bottom">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; The Snack Shop</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Hooked</p>
     </div>
     <!-- /.container -->
   </footer>
