@@ -6,7 +6,7 @@ function addItem(item) {
       text = "Input not valid";
    else
    {
-      text = "Added " + x + " to Cart";
+      text = "Added " + item + " to Cart";
 
       var date = new Date();
       date.setTime(date.getTime()+(86400 * 30));
