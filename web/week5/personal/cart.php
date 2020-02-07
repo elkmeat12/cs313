@@ -98,7 +98,7 @@
                         <h4 class="card-title">
                            <?=$name?>
                         </h4>
-                        <h5><?=$price . " ea."?></h5>
+                        <h5><?= "$" . $price . " ea."?></h5>
                         <input name=<?=$name?> id=<?=$name?> type="number" value="<?php echo $_COOKIE[$name]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                      </div>
                      <div class="card-footer">
