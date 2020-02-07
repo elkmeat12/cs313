@@ -113,8 +113,8 @@
 
                <!-- Quantity and Add to Cart  -->
                <div class="card-footer">
-                  <input id=<?=$name?> name=<?=$name?> type="number" value="0" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                  <button onclick="addItem(<?=$name?>)" class="btn btn-primary float-right">Add to Cart</button>
+                  <input id="<?=$name?>" name="<?=$name?>" type="number" value="0" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
+                  <button onclick="addItem('<?=$name?>')" class="btn btn-primary float-right">Add to Cart</button>
                </div>
 
                </div>
