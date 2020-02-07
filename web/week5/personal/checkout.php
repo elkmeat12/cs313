@@ -72,7 +72,7 @@
 
         <hr>
 
-        <div class="row">
+        <div class="row mx-3">
 
          <form action="confirm.php" method="POST" class="needs-validation" novalidate>
 
@@ -98,12 +98,12 @@
             <div class="form-row">
                <div class="col-md-4 mb-3">
                   <label for="phone">Phone Number</label>
-                  <input type="phone" name="phone" class="form-control" id="phone" placeholder="XXX-XXX-XXXX" required>
+                  <input type="tel" name="phone" class="form-control" id="phone" placeholder="000-000-0000" maxlength="15" required>
                   <div class="invalid-feedback">
                      Please add a phone number.
                   </div>
                </div>
-               <div class="col-md-4 mb-3">
+               <div class="col-md-4 mb-6">
                   <label for="email">Email</label>
                   <input type="email" name="emailPHP" class="form-control" id="email" placeholder="Email" required>
                   <div class="invalid-feedback">
@@ -114,7 +114,7 @@
 
             <!-- ROW 3 -->
             <div class="form-row">
-               <div class="col-md-6 mb-3">
+               <div class="col-md-6 mb-6">
                   <label for="street">Street Address</label>
                   <input type="text" name="street" class="form-control" id="street" placeholder="Street" required>
                   <div class="invalid-feedback">
