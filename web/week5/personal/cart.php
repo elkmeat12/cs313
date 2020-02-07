@@ -86,11 +86,10 @@
                $name = $iRow["item_name"];
                $description = $iRow["item_description"];
                $price = $iRow["price"];
-         ?>
 
-            <?php
                if(isset($_COOKIE["$name"])) {
                   if ($_COOKIE["$name"] > 0) { ?>
+                  
                         <div class="col-lg-4 col-md-6 mb-4">
                            <div class="card h-100">
                            <img class="card-img-top img-center" src=<?=$image?> alt=<?=$name . "picture"?>>
