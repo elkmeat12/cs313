@@ -74,7 +74,7 @@
 
          <!-- GET DATABASE ITEMS  -->
          <?php
-            $item = $db->prepare("SELECT * FROM item LIMIT 6 OFFSET 3");
+            $item = $db->prepare("SELECT * FROM item");
             $item->execute();
 
             while ($iRow = $item->fetch(PDO::FETCH_ASSOC))
