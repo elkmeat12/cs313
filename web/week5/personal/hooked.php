@@ -22,7 +22,7 @@
   <!-- Custom styles for this template -->
   <link href="hooked.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- <script type="text/javascript" src="prove3.js"></script> -->
+  <script type="text/javascript" src="hooked.js"></script>
 
 </head>
 
@@ -38,7 +38,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="prove3.php">Home
+            <a class="nav-link" href="hooked.php">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -108,13 +108,13 @@
                      <?php echo $name ?>
                   </h4>
                   <h5><?php echo $price . "ea." ?></h5>
-                  <p class="card-text"><?php echo $description ?></p>
+                  <p class="card-text"><?=$description?></p>
                </div>
 
                <!-- Quantity and Add to Cart  -->
                <div class="card-footer">
-                  <input id="chip1" name="chip1" type="number" value="0" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                  <button onclick="addItem('chip1')" class="btn btn-primary float-right">Add to Cart</button>
+                  <input id=<?=$name?> name=<?=$name?> type="number" value="0" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
+                  <button onclick="addItem(<?=$name?>)" class="btn btn-primary float-right">Add to Cart</button>
                </div>
 
                </div>
