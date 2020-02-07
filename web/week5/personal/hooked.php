@@ -22,7 +22,7 @@
   <!-- Custom styles for this template -->
   <link href="hooked.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="prove3.js"></script>
+  <!-- <script type="text/javascript" src="prove3.js"></script> -->
 
 </head>
 
@@ -87,11 +87,12 @@
 
          <!-- NEW CODE -->
             <?php
-               $item = $db->prepare("SELECT * FROM item LIMIT 2, 6");
+               $item = $db->prepare("SELECT * FROM item LIMIT 6");
                $item->execute();
 
                while ($iRow = $item->fetch(PDO::FETCH_ASSOC))
                {
+                  $image = $iRow["image"];
                   $name = $iRow["item_name"];
                   $description = $iRow["item_description"];
                   $price = $iRow["price"];
@@ -99,18 +100,23 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                <div class="card h-100">
-               <img class="card-img-top img-center" src="images/chips.jpeg" alt="Doritos Chips">
+               <img class="card-img-top img-center" src=<?=$image?> alt=<?php echo $name . "picture"?>>
+               
+               <!-- ITEM INFO -->
                <div class="card-body">
                   <h4 class="card-title">
                      <?php echo $name ?>
                   </h4>
-                  <h5><?php echo $price ?></h5>
+                  <h5><?php echo $price . "ea." ?></h5>
                   <p class="card-text"><?php echo $description ?></p>
                </div>
+
+               <!-- Quantity and Add to Cart  -->
                <div class="card-footer">
                   <input id="chip1" name="chip1" type="number" value="0" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                   <button onclick="addItem('chip1')" class="btn btn-primary float-right">Add to Cart</button>
                </div>
+
                </div>
             </div>
 
