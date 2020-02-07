@@ -87,6 +87,7 @@
 
                while ($iRow = $item->fetch(PDO::FETCH_ASSOC))
                {
+                  $id = $iRow["id"];
                   $image = $iRow["image"];
                   $name = $iRow["item_name"];
                   $description = $iRow["item_description"];
@@ -108,8 +109,8 @@
 
                <!-- Quantity and Add to Cart  -->
                <div class="card-footer">
-                  <input id="<?=$name?>" name="<?=$name?>" type="number" value="0" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
-                  <button onclick="addItem('<?=$name?>')" class="btn btn-primary float-right">Add to Cart</button>
+                  <input id="<?=$id?>" name="<?=$id?>" type="number" value="0" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
+                  <button onclick="addItem('<?=$id?>')" class="btn btn-primary float-right">Add to Cart</button>
                </div>
 
                </div>

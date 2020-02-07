@@ -2,35 +2,6 @@
   session_start();
   require "../../temp/dbConnect.php";
   $db = get_db();
-
-//   $image;
-//   $name; 
-//   $description; 
-//   $price;
-//   $product;
-  
-//    $item = $db->prepare("SELECT * FROM item");
-//    $item->execute();
-
-//    while ($iRow = $item->fetch(PDO::FETCH_ASSOC))
-//    {
-//       $image = $iRow["image"];
-//       $name = $iRow["item_name"];
-//       $description = $iRow["item_description"];
-//       $price = $iRow["price"];
-     
-
-//       if (!isset($_SESSION['cart'])) {
-//          $_SESSION['cart'] = array( 'name' => $name
-//                                   , 'image' => $image
-//                                   , 'desc' => $description
-//                                   , 'price' => $price
-//                                   , 'quant' => 0);
-//       } 
-//       else {
-
-//       }
-//    }
 ?>
 
 <!DOCTYPE html>
