@@ -82,6 +82,7 @@
 
             while ($iRow = $item->fetch(PDO::FETCH_ASSOC))
             {
+               $id = $iRow["id"];
                $image = $iRow["image"];
                $name = $iRow["item_name"];
                $description = $iRow["item_description"];
@@ -106,11 +107,7 @@
                            </div>
                            </div>
                         </div>
-                        <?=$name . " was purchased"?>
                <?php   }
-               }
-               else {
-                  echo "Nothing was added<br>";
                }
             ?>
          
