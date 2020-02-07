@@ -75,52 +75,79 @@
         <div class="row">
 
          <form action="confirm.php" method="POST" class="needs-validation" novalidate>
+
+            <!-- ROW 1 -->
             <div class="form-row">
                <div class="col-md-4 mb-3">
-                  <label for="validationCustom01">First name</label>
-                  <input type="text" name="fname" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
+                  <label for="first_name">First name</label>
+                  <input type="text" name="fname" class="form-control" id="first_name" placeholder="First name" value="" required>
                   <div class="valid-feedback">
                   Looks good!
                   </div>
                </div>
                <div class="col-md-4 mb-3">
-                  <label for="validationCustom02">Last name</label>
-                  <input type="text" name="lname" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
+                  <label for="last_name">Last name</label>
+                  <input type="text" name="lname" class="form-control" id="last_name" placeholder="Last name" value="" required>
                   <div class="valid-feedback">
                   Looks good!
                   </div>
                </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="form-row">
                <div class="col-md-4 mb-3">
-                  <label for="validationCustomUsername">Email</label>
-                  <input type="email" name="emailPHP" class="form-control" id="validationCustomEmail" placeholder="Email" required>
+                  <label for="phone">Phone Number</label>
+                  <input type="phone" name="phone" class="form-control" id="phone" placeholder="XXX-XXX-XXXX" required>
+                  <div class="invalid-feedback">
+                     Please add a phone number.
+                  </div>
+               </div>
+               <div class="col-md-4 mb-3">
+                  <label for="email">Email</label>
+                  <input type="email" name="emailPHP" class="form-control" id="email" placeholder="Email" required>
                   <div class="invalid-feedback">
                      Please add an email.
                   </div>
                </div>
             </div>
+
+            <!-- ROW 3 -->
             <div class="form-row">
                <div class="col-md-6 mb-3">
-                  <label for="validationCustom03">City</label>
-                  <input type="text" name="city" class="form-control" id="validationCustom03" placeholder="City" required>
+                  <label for="street">Street Address</label>
+                  <input type="text" name="street" class="form-control" id="street" placeholder="Street" required>
+                  <div class="invalid-feedback">
+                  Please provide a valid street address.
+                  </div>
+               </div>
+               <div class="col-md-6 mb-3">
+                  <label for="city">City</label>
+                  <input type="text" name="city" class="form-control" id="city" placeholder="City" required>
                   <div class="invalid-feedback">
                   Please provide a valid city.
                   </div>
                </div>
+            </div>
+
+            <!-- ROW 4 -->
+            <div class="form-row">
                <div class="col-md-3 mb-3">
-                  <label for="validationCustom04">State</label>
-                  <input type="text" name="state" class="form-control" id="validationCustom04" placeholder="State" required>
+                  <label for="state">State</label>
+                  <input type="text" name="state" class="form-control" id="state" placeholder="State" required>
                   <div class="invalid-feedback">
                   Please provide a valid state.
                   </div>
                </div>
                <div class="col-md-3 mb-3">
-                  <label for="validationCustom05">Zip</label>
-                  <input type="text" name="zipCode" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                  <label for="zip_code">Zip</label>
+                  <input type="text" name="zipCode" class="form-control" id="zip_code" placeholder="Zip" required>
                   <div class="invalid-feedback">
                   Please provide a valid zip.
                   </div>
                </div>
             </div>
+
             <br>
             <button class="btn btn-primary" type="submit">Confirm Order</button>
          </form>
