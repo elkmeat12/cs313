@@ -12,15 +12,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>The Snack Shop</title>
+  <title>Hooked</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   
   <!-- Custom styles for this template -->
-  <link href="prove3.css" rel="stylesheet">
+  <link href="hooked.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="prove3.js"></script>
+  <script type="text/javascript" src="hooked.js"></script>
 
 </head>
 
@@ -29,19 +29,19 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg1">
     <div class="container">
-      <a class="navbar-brand" href="prove3.php">The Snack Shop</a>
+      <a class="navbar-brand" href="hooked.php">Hooked</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="prove3.php">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="cart.php">View Cart</a>
+            <a class="nav-link" href="hooked.php">Home
+               </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="cart.php">View Cart</a>
+               <span class="sr-only">(current)</span>
           </li>
         </ul>
       </div>
