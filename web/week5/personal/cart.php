@@ -89,8 +89,8 @@
          ?>
 
             <?php
-               if(isset($_COOKIE[$name])) {
-               if ($_COOKIE[$name] > 0) { ?>
+               if(isset($_COOKIE["$name"])) {
+               if ($_COOKIE["$name"] > 0) { ?>
                   <div class="col-lg-4 col-md-6 mb-4">
                      <div class="card h-100">
                      <img class="card-img-top img-center" src="images/chips.jpeg" alt="Doritos Chips">
@@ -99,11 +99,11 @@
                            <?=$name?>
                         </h4>
                         <h5><?= "$" . $price . " ea."?></h5>
-                        <input name=<?=$name?> id=<?=$name?> type="number" value="<?php echo $_COOKIE[$name]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
+                        <input name="<?=$name?>" id="<?=$name?>" type="number" value="<?php echo $_COOKIE[$name]; ?>" maxlength="2" min="0" max="10" style="width: 25%;" class="float-left text-center"/>
                      </div>
                      <div class="card-footer">
-                        <button onclick="adjustCart(<?=$name?>)" class="btn btn-primary float-left">Adjust</button>
-                        <button onclick="removeCart(<?=$name?>)" class="btn btn-danger float-right">Remove</button>
+                        <button onclick="adjustCart('<?=$name?>')" class="btn btn-primary float-left">Adjust</button>
+                        <button onclick="removeCart('<?=$name?>')" class="btn btn-danger float-right">Remove</button>
                      </div>
                      </div>
                   </div>
