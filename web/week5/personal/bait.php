@@ -66,7 +66,7 @@
           <a href="reel.php" class="list-group-item">Reels</a>
           <a href="line.php" class="list-group-item">Line</a>
           <a href="tackle.php" class="list-group-item">Tackle</a>
-          <a href="bait.php" class="list-group-item">Bait</a>
+          <a href="bait.php" class="list-group-item active">Bait</a>
         </div>
 
       </div>
