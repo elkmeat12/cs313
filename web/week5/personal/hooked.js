@@ -13,8 +13,7 @@ function addItem(item) {
       var expire = "; expires="+date.toGMTString();
       document.cookie = item+"="+x+expire+"; path=/";
    }
-
-   // alert(text);
+   console.log(text);
 }
 
 function adjustCart(item) {
@@ -35,7 +34,7 @@ function adjustCart(item) {
      var expires = "; expires="+date.toGMTString();
      document.cookie = item+"="+x+expires+"; path=/";
    }
-   // alert(text);
+   console.log(text);
    window.location.href = 'cart.php';
 }
 
@@ -53,6 +52,6 @@ function removeCart(item) {
    var expires = "; expires="+date.toGMTString();
    document.cookie = item+"="+x+expires+"; path=/";
    
-   // alert(text);
+   console.log(text);
    window.location.href = 'cart.php';
 }
