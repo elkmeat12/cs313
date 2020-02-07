@@ -20,7 +20,7 @@
   <!-- Custom styles for this template -->
   <link href="hooked.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="hoooked.js"></script>
+  <script type="text/javascript" src="hooked.js"></script>
 
 </head>
 

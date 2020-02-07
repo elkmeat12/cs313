@@ -15,6 +15,7 @@ function addItem(item) {
    }
 
    alert(text);
+   window.location.href = 'cart.php'
 }
 
 function adjustCart(item) {
