@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   
   <!-- Custom styles for this template -->
-  <link href="prove3.css" rel="stylesheet">
+  <link href="hooked.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="hoooked.js"></script>
 
@@ -38,6 +38,9 @@
           <li class="nav-item">
             <a class="nav-link" href="hooked.php">Home
             </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin.php">Admin</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="cart.php">View Cart</a>
