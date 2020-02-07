@@ -37,7 +37,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="hooked.php">Home
               <!-- <span class="sr-only">(current)</span> -->
             </a>
@@ -74,12 +74,7 @@
 
       <div class="col-lg-9">
 
-         <!-- banner -->
-         <!-- <div class="my-4">
-            <img class="d-block img-fluid" src="\week5\personal\images\fishing.jpg" alt="Fishing Image">
-         </div> -->
-
-         <h4>Fishing Rods</h4>
+         <h4 class="my-4">Fishing Rods</h4>
 
          <hr>
 
@@ -107,7 +102,7 @@
                   <h4 class="card-title">
                      <?php echo $name ?>
                   </h4>
-                  <h5><?php echo $price . "ea." ?></h5>
+                  <h5><?php echo $price . " ea." ?></h5>
                   <p class="card-text"><?=$description?></p>
                </div>
 

@@ -107,7 +107,7 @@
                   <h4 class="card-title">
                      <?php echo $name ?>
                   </h4>
-                  <h5><?php echo $price . "ea." ?></h5>
+                  <h5><?php echo $price . " ea." ?></h5>
                   <p class="card-text"><?=$description?></p>
                </div>
 
