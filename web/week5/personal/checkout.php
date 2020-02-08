@@ -75,32 +75,36 @@
         <div class="row mx-3">
 
          <form action="confirm.php" method="POST" class="needs-validation" novalidate>
-            <div class="form-row">
-               <div class="col">
-                  <input type="text" class="form-control" placeholder="First name">
-               </div>
-               <div class="col">
-                  <input type="text" class="form-control" placeholder="Last name">
-               </div>
-            </div>
+            <!-- NAME -->
             <div class="form-row">
                <div class="form-group col-md-6">
-                  <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  <label for="first_name">First Name</label>
+                  <input type="text" class="form-control" placeholder="John">
                </div>
                <div class="form-group col-md-6">
-                  <label for="inputPassword4">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" class="form-control" placeholder="Doe">
                </div>
             </div>
-            <div class="form-group">
-               <label for="inputAddress">Address</label>
-               <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+
+            <!-- CONTACT INFO -->
+            <div class="form-row">
+               <div class="form-group col-md-6">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="000-000-0000" maxlength="12">
+               </div>
+               <div class="form-group col-md-6">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+               </div>
             </div>
+
+            <!-- ADDRESS -->
             <div class="form-group">
-               <label for="inputAddress2">Address 2</label>
-               <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+               <label for="inputStreet">Street Address</label>
+               <input type="text" class="form-control" id="inputStreet" placeholder="1234 Main St">
             </div>
+            
             <div class="form-row">
                <div class="form-group col-md-6">
                   <label for="inputCity">City</label>
@@ -108,10 +112,7 @@
                </div>
                <div class="form-group col-md-4">
                   <label for="inputState">State</label>
-                  <select id="inputState" class="form-control">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                  </select>
+                  <input type="text" class="form-control" id="inputState">
                </div>
                <div class="form-group col-md-2">
                   <label for="inputZip">Zip</label>
