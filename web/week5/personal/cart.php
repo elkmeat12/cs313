@@ -42,7 +42,7 @@
                </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="admin.php">Admin</a>
+            <a class="nav-link" href="login.php">Admin</a>
           </li>
             <li class="nav-item active">
                <a class="nav-link" href="cart.php">View Cart</a>
