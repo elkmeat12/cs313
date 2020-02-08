@@ -61,13 +61,10 @@
 
       <div class="col-lg-12">
 
-        <!-- <h4 class="my-4">Admin Login</h4> -->
-
-        <hr>
          <form action="admin.php" method="post" class="center-item my-4">
             <div class="container">
-               <h4>Admin Login</h4>
-
+               <h4 class="text-center">Admin Login</h4>
+               <hr>
                <label for="uname"><b>Username</b></label>
                <input type="text" placeholder="Enter Username" name="uname" required>
 
