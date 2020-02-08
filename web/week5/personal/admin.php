@@ -86,7 +86,7 @@
                </div>
                <div class="form-group col-md-3">
                   <label for="item_price">Price</label>
-                  <input type="number" class="form-control" name="item_price" id="item_price" placeholder="0.00" required>
+                  <input type="number" class="form-control" name="item_price" id="item_price" placeholder="0.00" min="0.00" max="9999.99" step="0.01" required>
                </div>
             </div>
 
