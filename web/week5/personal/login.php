@@ -14,7 +14,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Hooked :: Order Receipt</title>
+  <title>Hooked :: Admin Login</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -42,7 +42,7 @@
             <a class="nav-link" href="hooked.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.php">Admin</a>
+            <a class="nav-link" href="login.php" active>Admin</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="cart.php">View Cart</a>
@@ -59,9 +59,9 @@
 
       <!-- /.col-lg-3 -->
 
-      <div class="col-lg-9">
+      <div class="col-lg-6">
 
-        <h4 class="my-4">Delivery Order</h4>
+        <h4 class="my-4">Admin Login</h4>
 
         <hr>
          <form action="admin.php" method="post">
