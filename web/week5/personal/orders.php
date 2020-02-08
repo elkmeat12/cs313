@@ -67,84 +67,10 @@
 
       <div class="col-lg-9">
 
-        <h4 class="my-4">Add Item</h4>
+        <h4 class="my-4">Coming Soon</h4>
 
         <hr>
 
-        <div class="row mx-3">
-
-         <form action="" method="POST" class="needs-validation" novalidate>
-            <!-- NAME -->
-            <div class="form-row">
-               <div class="form-group col-md-6">
-                  <label for="first_name">First Name</label>
-                  <input type="text" class="form-control" name="first_name" id="first_name" placeholder="John" required>
-               </div>
-               <div class="form-group col-md-6">
-                  <label for="last_name">Last Name</label>
-                  <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Doe" required>
-               </div>
-            </div>
-
-            <!-- CONTACT INFO -->
-            <div class="form-row">
-               <div class="form-group col-md-6">
-                  <label for="phone">Phone Number</label>
-                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="000-000-0000" maxlength="12" required>
-               </div>
-               <div class="form-group col-md-6">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" name="emailPHP" id="email" placeholder="Email" required>
-               </div>
-            </div>
-
-            <!-- ADDRESS -->
-            <div class="form-group">
-               <label for="inputStreet">Street Address</label>
-               <input type="text" class="form-control" name="street" id="inputStreet" placeholder="1234 Main St" required>
-            </div>
-            
-            <div class="form-row">
-               <div class="form-group col-md-6">
-                  <label for="inputCity">City</label>
-                  <input type="text" class="form-control" name="city" id="inputCity" required>
-               </div>
-               <div class="form-group col-md-4">
-                  <label for="inputState">State</label>
-                  <input type="text" class="form-control" name="state" id="inputState" required>
-               </div>
-               <div class="form-group col-md-2">
-                  <label for="inputZip">Zip</label>
-                  <input type="text" class="form-control" name="zipCode" id="inputZip" required>
-               </div>
-            </div>
-
-            <br>
-            <button class="btn btn-primary" type="submit">Confirm Order</button>
-         </form>
-
-         <script>
-         // Example starter JavaScript for disabling form submissions if there are invalid fields
-         (function() {
-         'use strict';
-         window.addEventListener('load', function() {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName('needs-validation');
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function(form) {
-               form.addEventListener('submit', function(event) {
-               if (form.checkValidity() === false) {
-                  event.preventDefault();
-                  event.stopPropagation();
-               }
-               form.classList.add('was-validated');
-               }, false);
-            });
-         }, false);
-         })();
-         </script>
-
-        </div>
         <!-- /.row -->
       </div>
       <!-- /.col-lg-9 -->

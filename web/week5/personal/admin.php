@@ -104,8 +104,19 @@
                <input type="file" class="form-control" name="item_image" id="item_image" accept="image/.jpg" required>
             </div>
 
+            <div class="input-group">
+            <div class="form-group input-group-prepend">
+               <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+            </div>
+            <div class="custom-file">
+               <input type="file" class="custom-file-input" id="inputGroupFile01"
+                  aria-describedby="inputGroupFileAddon01">
+               <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            </div>
+            </div>
+
             <br>
-            <button class="btn btn-primary" type="submit">Confirm Order</button>
+            <button class="btn btn-primary" type="submit">Add Item</button>
          </form>
 
          <script>
