@@ -99,14 +99,14 @@
             </div>
 
             <!-- IMAGE UPLOAD -->
-            <div class="input-group col-md-12">
+            <div class="input-group col-md-9 mx-0">
                <div class="form-group input-group-prepend">
                   <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
                </div>
                <div class="custom-file">
                   <input type="file" class="custom-file-input" id="item_image"
                      aria-describedby="inputGroupFileAddon01" accept="image/.jpg" required>
-                  <label class="custom-file-label" for="item_image">Choose file</label>
+                  <label class="custom-file-label" for="item_image">Add item image</label>
                </div>
             </div>
 
