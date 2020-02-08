@@ -41,10 +41,10 @@
           <li class="nav-item">
             <a class="nav-link" href="hooked.php">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.php" active>Admin</a>
-          </li>
           <li class="nav-item active">
+            <a class="nav-link" href="login.php">Admin</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="cart.php">View Cart</a>
           </li>
         </ul>
@@ -59,7 +59,7 @@
 
       <!-- /.col-lg-3 -->
 
-      <div class="col-lg-6">
+      <div class="col-lg-6 align-content-center">
 
         <h4 class="my-4">Admin Login</h4>
 
