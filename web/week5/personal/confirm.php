@@ -75,8 +75,8 @@
 
             echo "Thank you for your order $first_name $last_name!<br>";
             echo "The items you purchase below will be delivered to:<br><br>
-                  \t$street<br>
-                  \t$city, $state $zip";
+                  <em>$street<br>
+                  $city, $state $zip</em>";
          ?>
 
         <div class="row my-4">
