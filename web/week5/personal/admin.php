@@ -99,7 +99,7 @@
             </div>
 
             <!-- IMAGE UPLOAD -->
-            <div class="input-group col-md-9 mx-0">
+            <div class="input-group col-md-9" style="padding: 0px 0px">
                <div class="form-group input-group-prepend">
                   <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
                </div>
