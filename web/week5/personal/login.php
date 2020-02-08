@@ -59,7 +59,7 @@
 
       <!-- /.col-lg-3 -->
 
-      <div class="col-lg-6">
+      <div class="col-lg-12">
 
         <h4 class="my-4">Admin Login</h4>
 
