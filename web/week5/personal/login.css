@@ -33,3 +33,8 @@ form {
  .container {
    padding: 16px;
  }
+
+ .center-item {
+   margin-left: auto;
+   margin-right: auto;
+ }

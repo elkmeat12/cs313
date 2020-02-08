@@ -59,13 +59,13 @@
 
       <!-- /.col-lg-3 -->
 
-      <div class="col-lg-6 align-content-center">
+      <div class="col-lg-6">
 
         <h4 class="my-4">Admin Login</h4>
 
         <hr>
          <form action="admin.php" method="post">
-            <div class="container">
+            <div class="container center-item">
                <label for="uname"><b>Username</b></label>
                <input type="text" placeholder="Enter Username" name="uname" required>
 
