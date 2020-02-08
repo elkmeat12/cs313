@@ -79,11 +79,11 @@
             <div class="form-row">
                <div class="form-group col-md-6">
                   <label for="first_name">First Name</label>
-                  <input type="text" class="form-control" placeholder="John">
+                  <input type="text" class="form-control" placeholder="John" required>
                </div>
                <div class="form-group col-md-6">
                   <label for="last_name">Last Name</label>
-                  <input type="text" class="form-control" placeholder="Doe">
+                  <input type="text" class="form-control" placeholder="Doe" required>
                </div>
             </div>
 
@@ -91,32 +91,32 @@
             <div class="form-row">
                <div class="form-group col-md-6">
                   <label for="phone">Phone Number</label>
-                  <input type="tel" class="form-control" id="phone" placeholder="000-000-0000" maxlength="12">
+                  <input type="tel" class="form-control" id="phone" placeholder="000-000-0000" maxlength="12" required>
                </div>
                <div class="form-group col-md-6">
                   <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <input type="email" class="form-control" id="email" placeholder="Email" required>
                </div>
             </div>
 
             <!-- ADDRESS -->
             <div class="form-group">
                <label for="inputStreet">Street Address</label>
-               <input type="text" class="form-control" id="inputStreet" placeholder="1234 Main St">
+               <input type="text" class="form-control" id="inputStreet" placeholder="1234 Main St" required>
             </div>
             
             <div class="form-row">
                <div class="form-group col-md-6">
                   <label for="inputCity">City</label>
-                  <input type="text" class="form-control" id="inputCity">
+                  <input type="text" class="form-control" id="inputCity" required>
                </div>
                <div class="form-group col-md-4">
                   <label for="inputState">State</label>
-                  <input type="text" class="form-control" id="inputState">
+                  <input type="text" class="form-control" id="inputState" required>
                </div>
                <div class="form-group col-md-2">
                   <label for="inputZip">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
+                  <input type="text" class="form-control" id="inputZip" required>
                </div>
             </div>
 
