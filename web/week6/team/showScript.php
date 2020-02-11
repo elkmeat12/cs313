@@ -28,7 +28,7 @@
 
       while ($tRow = $topic_stmt->fetch(PDO::FETCH_ASSOC))
       {
-         echo $tRow['name'];
+         echo $tRow['name'] . ' ';
       }
       echo '</p>';
    }
