@@ -1,5 +1,8 @@
 <?php
 // retrieve POST data from the other page
+$first = $_POST['first'];
+$last = $_POST['last'];
+$food = $_POST['food'];
 
 require("dbConnect.php");
 $db = get_db();
@@ -7,6 +10,13 @@ $db = get_db();
 try
 {
 	// insert into database
+	$query = 'INSERT INTO w6_user (first_name, last_name, food_type) VALUES (:first, :last, :food)';
+	$stmt = $db->prepare($query);
+
+	$stmt->bindValue(':first', $first);
+	$stmt->bindValue(':last', $last);
+	$stmt->bindValue(':food', $food);
+	$stmt->execute();
 	
 	// SELECT c.relname FROM pg_class c WHERE c.relkind = 'S';   -- display all sequences
 	// get id of last inserted row - save in $userId
