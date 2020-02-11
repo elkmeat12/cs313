@@ -17,8 +17,8 @@
       $verse = $row["verse"];
       $content = $row["content"];
 
-      echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"";
-      echo "Topics: ";
+      echo "<p><strong>$book $chapter:$verse</strong> - \"$content\" <br>";
+      echo "<em>Topics:</em> ";
       
       $topic_stmt = $db->prepare('SELECT name FROM topic t
                                   JOIN scripture_topic st ON st.topic_id = t.id 
