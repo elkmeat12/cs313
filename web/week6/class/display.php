@@ -17,9 +17,9 @@
                $last = $row['last_name'];
                $food_id = $row['food_type'];
 
-               $stmt = $db->prepare('SELECT food FROM w6_food WHERE ID = $food_id');
-               $stmt->execute();
-               while ($fRow = $stmt->fetch(PDO::FETCH_ASSOC))
+               $foods = $db->prepare('SELECT food FROM w6_food WHERE ID = $food_id');
+               $foods->execute();
+               while ($fRow = $foods->fetch(PDO::FETCH_ASSOC))
                {
                   $food = $fRow['food'];
                }
