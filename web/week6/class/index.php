@@ -16,19 +16,14 @@
             <div class="col">
                   <select id="inputFood" class="form-control" name="food">
                      <?php
-                        $stmt = $db->prepare("SELECT * FROM w6_food");
-                        $stmt->execute();
-
-                        while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
+                        $statement = $db->prepare("SELECT * FROM w6_food");
+                        $statement->execute();
+                        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                         {
-                           $id = $row['id'];
+                           $id   = $row['id'];
                            $food = $row['food'];
-
                            echo "<option value='$id'>$food</option>";
                         }
-                        
-                        // loop through results
-                        // output html option for each row
                      ?>
                   </select>
                </div>
