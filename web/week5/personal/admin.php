@@ -92,16 +92,17 @@
                   $stmt = $db->prepare('SELECT id, category_name FROM category');
                   $stmt->execute();
 
+                  echo "<label for='sCat'>Category</label>";
+                  echo "<select name='sCat' id='sCat'>";
                   while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
                   {
                     $id = $row['id'];
                     $name = $row['category_name'];
                     
-                    echo "<select name='sCat[]' id='sCat$id'>
-                            <option value=$id>$name</option></select>";
-                    echo "<label for='sCat$id'>$name</label>";
-                    echo "\n";
+                    echo "<option value=$id>$name</option>";
+                    // echo "\n";
                   }
+                  echo "</select>";
                ?>
                </div>
 
