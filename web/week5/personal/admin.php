@@ -93,7 +93,7 @@
                   $stmt->execute();
 
                   echo "<label for='sCat'>Category</label>";
-                  echo "<select name='sCat' id='sCat'>";
+                  echo "<select name='sCat' id='sCat' class='form-control'>";
                   while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
                   {
                     $id = $row['id'];
