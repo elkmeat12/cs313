@@ -1,5 +1,7 @@
 <?php
    session_start();
+   require('../../temp/dbConnect.php');
+   $db = get_db();
 ?>
 
 <!DOCTYPE html>
@@ -73,17 +75,36 @@
 
         <div class="row mx-3">
 
-         <form action="" method="POST" class="needs-validation" novalidate>
+         <form action="insertOrder.php" method="POST" class="needs-validation" novalidate>
             <!-- ITEM INFO -->
             <div class="form-row">
                <div class="form-group col-md-6">
                   <label for="item_name">Item Name</label>
                   <input type="text" class="form-control" name="item_name" id="item_name" placeholder="Item" required>
                </div>
+
                <div class="form-group col-md-3">
-                  <label for="item_type">Item Type</label>
-                  <input type="text" class="form-control" name="item_type" id="item_type" placeholder="Type" required>
+                  <!-- <label for="slctCat[]">Category</label> -->
+                  <!-- <input type="text" class="form-control" name="category" id="category" placeholder="Category" required> -->
+               <!-- </div> -->
+      
+               <?php
+                  $stmt = $db->prepare('SELECT id, category_name FROM category');
+                  $stmt->execute();
+
+                  while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
+                  {
+                    $id = $row['id'];
+                    $name = $row['category_name'];
+                    
+                    echo "<select name='sCat[]' id='sCat$id'>
+                            <option value=$id>$name</option></select>";
+                    echo "<label for='sCat$id'>$name</label>";
+                    echo "\n";
+                  }
+               ?>
                </div>
+
                <div class="form-group col-md-3">
                   <label for="item_price">Price</label>
                   <input type="number" class="form-control" name="item_price" id="item_price" placeholder="0.00" min="0.00" max="9999.99" step="0.01" required>
