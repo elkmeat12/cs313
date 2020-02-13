@@ -61,7 +61,9 @@
 
         <!-- <h2 class="my-4">Browse Snacks</h2> -->
         <div class="list-group my-4">
+          <a href="admin.php" class="list-group-item active">Add Items</a>
           <a href="orders.php" class="list-group-item">Show Orders</a>
+          <a href="inventory.php" class="list-group-item">Inventory</a>
         </div>
 
       </div>
@@ -76,17 +78,15 @@
         <div class="row mx-3">
 
          <form action="insertOrder.php" method="POST" class="needs-validation" novalidate>
-            <!-- ITEM INFO -->
+            <!-- ITEM NAME -->
             <div class="form-row">
                <div class="form-group col-md-6">
                   <label for="item_name">Item Name</label>
                   <input type="text" class="form-control" name="item_name" id="item_name" placeholder="Item" required>
                </div>
 
+              <!-- ITEM CATEGORY -->
                <div class="form-group col-md-3">
-                  <!-- <label for="slctCat[]">Category</label> -->
-                  <!-- <input type="text" class="form-control" name="category" id="category" placeholder="Category" required> -->
-               <!-- </div> -->
       
                <?php
                   $stmt = $db->prepare('SELECT id, category_name FROM category');
@@ -100,12 +100,12 @@
                     $name = $row['category_name'];
                     
                     echo "<option value=$id>$name</option>";
-                    // echo "\n";
                   }
                   echo "</select>";
                ?>
                </div>
-
+              
+               <!-- ITEM PRICE -->
                <div class="form-group col-md-3">
                   <label for="item_price">Price</label>
                   <input type="number" class="form-control" name="item_price" id="item_price" placeholder="0.00" min="0.00" max="9999.99" step="0.01" required>
