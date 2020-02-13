@@ -11,7 +11,7 @@ $zip = $_POST['inputZip'];
 require("dbConnect.php");
 $db = get_db();
 
-// echo "$first $last with $phone and $email at $street $city, $state $zip";
+echo "$first $last with $phone and $email at $street $city, $state $zip";
 
 try
 {
@@ -36,7 +36,7 @@ catch (Exception $ex)
 	echo "Error with DB. Details: $ex";
 	die();
 }
-header("Location: confirm.php");
+// header("Location: confirm.php");
 
 die(); 
 ?>
