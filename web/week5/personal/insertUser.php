@@ -1,12 +1,12 @@
 <?php
-$first = $_POST['first_name'];
-$last = $_POST['last_name'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
-$street = $_POST['inputStreet'];
-$city = $_POST['inputCity'];
-$state = $_POST['inputState'];
-$zip = $_POST['inputZip'];
+$first = htmlspecialchars($_POST['first_name']);
+$last = htmlspecialchars($_POST['last_name']);
+$phone = htmlspecialchars($_POST['phone']);
+$email = htmlspecialchars($_POST['email']);
+$street = htmlspecialchars($_POST['inputStreet']);
+$city = htmlspecialchars($_POST['inputCity']);
+$state = htmlspecialchars($_POST['inputState']);
+$zip = htmlspecialchars($_POST['inputZip']);
 
 require("../../temp/dbConnect.php");
 $db = get_db();
@@ -36,7 +36,7 @@ catch (Exception $ex)
 	echo "Error with DB. Details: $ex";
 	die();
 }
-header("Location: confirm.php");
+header("Location: confirm.php/?customerId=$customerId");
 
 die(); 
 ?>
