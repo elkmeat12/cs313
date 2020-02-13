@@ -99,7 +99,7 @@
 
            try
            {
-             $stmt = $db->prepare("SELECT c.category_name, i.item_name, i.item_description, i.price
+             $stmt = $db->prepare("SELECT c.category_name, i.item_name, i.item_description, i.price::float8::numeric::money
                                    FROM item i
                                    JOIN category c ON i.category_id = c.id");
 
@@ -118,7 +118,7 @@
            }
            echo "</table>";
         ?>
-
+         <br><br>
         <!-- /.row -->
       </div>
       <!-- /.col-lg-9 -->
