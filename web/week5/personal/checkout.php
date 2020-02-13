@@ -1,5 +1,6 @@
 <?php
    session_start();
+   require("../../temp/dbConnect.php");
 ?>
 
 <!DOCTYPE html>
@@ -91,7 +92,7 @@
             <div class="form-row">
                <div class="form-group col-md-6">
                   <label for="phone">Phone Number</label>
-                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="000-000-0000" maxlength="12" required>
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="000-000-0000" maxlength="12" required>
                </div>
                <div class="form-group col-md-6">
                   <label for="email">Email</label>
@@ -157,7 +158,7 @@
   <!-- /.container -->
   <br><br>
   <!-- Footer -->
-  <footer class="py-5 bg1 fixed-bottom">
+  <footer class="py-5 bg1">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Hooked</p>
     </div>
