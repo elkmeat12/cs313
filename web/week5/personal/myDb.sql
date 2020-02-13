@@ -22,7 +22,6 @@ CREATE TABLE customer
 , city           VARCHAR(50)    NOT NULL
 , state          VARCHAR(50)    NOT NULL
 , zip_code       VARCHAR(5)     NOT NULL
-, purchase_date  DATE           NOT NULL
 );
 
 CREATE TABLE customer_order 

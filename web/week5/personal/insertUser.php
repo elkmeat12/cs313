@@ -13,8 +13,8 @@ $db = get_db();
 
 try
 {
-	$query = 'INSERT INTO customer (first_name, last_name, email, phone_number, street, city, state, zip_code, purchase_date) 
-             VALUES (:first, :last, :email, :phone, :street, :city, :state, :zip, :date)';
+	$query = 'INSERT INTO customer (first_name, last_name, email, phone_number, street, city, state, zip_code) 
+             VALUES (:first, :last, :email, :phone, :street, :city, :state, :zip)';
 	$statement = $db->prepare($query);
 	$statement->bindValue(':first', $first);
 	$statement->bindValue(':last', $last);
@@ -24,7 +24,6 @@ try
    $statement->bindValue(':city', $city);
    $statement->bindValue(':state', $state);
    $statement->bindValue(':zip', $zip);
-   $statement->bindValue(':date', date("Y-m-d"));
 	$statement->execute();
 	
 	// SELECT c.relname FROM pg_class c WHERE c.relkind = 'S';   -- display all sequences
