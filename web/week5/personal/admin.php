@@ -169,7 +169,7 @@
   <!-- /.container -->
   <br><br>
   <!-- Footer -->
-  <footer class="py-5 bg1 mt-auto">
+  <footer class="py-5 bg1 fixed-bottom">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Hooked</p>
     </div>
