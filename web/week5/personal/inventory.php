@@ -76,7 +76,7 @@
         <hr>
 
         <?php
-            echo "<table class='table table-striped'>";
+            echo "<table class='table table-striped mb-auto'>";
             echo "<tr><th>Category</th><th>Name</th><th>Description</th><th>Price</th></tr>";
 
             class TableRows extends RecursiveIteratorIterator {
@@ -85,7 +85,7 @@
                }
            
                function current() {
-                   return "<td style='width: 150px; border: 1px solid black;'>" . parent::current(). "</td>";
+                   return "<td>" . parent::current(). "</td>";
                }
            
                function beginChildren() {
