@@ -96,7 +96,7 @@
                </div>
                <div class="form-group col-md-6">
                   <label for="email">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Email" required>
                </div>
             </div>
 

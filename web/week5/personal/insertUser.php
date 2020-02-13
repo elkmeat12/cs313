@@ -26,7 +26,6 @@ try
    $statement->bindValue(':zip', $zip);
 	$statement->execute();
 	
-	// SELECT c.relname FROM pg_class c WHERE c.relkind = 'S';   -- display all sequences
 	// get id of last inserted row - save in $userId
 	$customerId = $db->lastInsertId("customer_id_seq");
 }
