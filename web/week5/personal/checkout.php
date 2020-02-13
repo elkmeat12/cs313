@@ -96,28 +96,28 @@
                </div>
                <div class="form-group col-md-6">
                   <label for="email">Email</label>
-                  <input type="email" class="form-control" name="emailPHP" id="email" placeholder="Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                </div>
             </div>
 
             <!-- ADDRESS -->
             <div class="form-group">
                <label for="inputStreet">Street Address</label>
-               <input type="text" class="form-control" name="street" id="inputStreet" placeholder="1234 Main St" required>
+               <input type="text" class="form-control" name="inputStreet" id="inputStreet" placeholder="1234 Main St" required>
             </div>
             
             <div class="form-row">
                <div class="form-group col-md-6">
                   <label for="inputCity">City</label>
-                  <input type="text" class="form-control" name="city" id="inputCity" required>
+                  <input type="text" class="form-control" name="inputCity" id="inputCity" required>
                </div>
                <div class="form-group col-md-4">
                   <label for="inputState">State</label>
-                  <input type="text" class="form-control" name="state" id="inputState" required>
+                  <input type="text" class="form-control" name="inputState" id="inputState" required>
                </div>
                <div class="form-group col-md-2">
                   <label for="inputZip">Zip</label>
-                  <input type="text" class="form-control" name="zipCode" id="inputZip" required>
+                  <input type="text" class="form-control" name="inputZip" id="inputZip" required>
                </div>
             </div>
 
