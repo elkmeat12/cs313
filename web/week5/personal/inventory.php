@@ -76,7 +76,7 @@
         <hr>
 
         <?php
-            echo "<table style='border: solid 1px black;'>";
+            echo "<table class='table table-striped'>";
             echo "<tr><th>Category</th><th>Name</th><th>Description</th><th>Price</th></tr>";
 
             class TableRows extends RecursiveIteratorIterator {
