@@ -63,30 +63,21 @@
         <h4 class="my-4">Delivery Order</h4>
 
         <hr>
-        <?php
-          $customerId = $db->lastInsertId("customer_id_seq");
-          $stmt = $db->prepare('SELECT * FROM customer WHERE ID = :customerId');
-          $stmt->bindValue(':customerId', $customerId);
-          $stmt->execute();
+         <?php
+            $first_name = htmlspecialchars($_POST["first_name"]);
+            $last_name = htmlspecialchars($_POST["last_name"]);
+            $phone = htmlspecialchars($_POST["phone"]);
+            $email = htmlspecialchars($_POST["emailPHP"]);
+            $street = htmlspecialchars($_POST["street"]);
+            $city = htmlspecialchars($_POST["city"]);
+            $state = htmlspecialchars($_POST["state"]);
+            $zip = htmlspecialchars($_POST["zipCode"]);
 
-          while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
-          {
-            $id = $row['id'];
-            $first = $row['first_name'];
-            $last = $row['last_name'];
-            $email = $row['email'];
-            $phone = $row['phone_number'];
-            $street = $row['street'];
-            $city = $row['city'];
-            $state = $row['state'];
-            $zip = $row['zip_code'];
-
-            echo "Thank you for your order $first $last!<br>";
+            echo "Thank you for your order $first_name $last_name!<br>";
             echo "The items you purchase below will be delivered to:<br><br>
                   <em>$street<br>
                   $city, $state $zip</em>";
-          }
-        ?>
+         ?>
 
         <div class="row my-4">
 
