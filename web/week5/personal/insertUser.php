@@ -11,21 +11,21 @@ $zip = $_POST['inputZip'];
 require("dbConnect.php");
 $db = get_db();
 
-echo "$first $last with $phone and $email at $street $city, $state $zip";
+// echo "$first $last with $phone and $email at $street $city, $state $zip";
 
 try
 {
 	$query = 'INSERT INTO customer (first_name, last_name, email, phone_number, street, city, state, zip_code) 
              VALUES (:first, :last, :email, :phone, :street, :city, :state, :zip)';
 	$statement = $db->prepare($query);
-	$statement->bindValue(':first', $first);
-	$statement->bindValue(':last', $last);
-   $statement->bindValue(':email', $email);
-   $statement->bindValue(':phone', $phone);
-   $statement->bindValue(':street', $street);
-   $statement->bindValue(':city', $city);
-   $statement->bindValue(':state', $state);
-   $statement->bindValue(':zip', $zip);
+	$statement->bindValue(':first', "$first");
+	$statement->bindValue(':last', "$last");
+   $statement->bindValue(':email', "$email");
+   $statement->bindValue(':phone', "$phone");
+   $statement->bindValue(':street', "$street");
+   $statement->bindValue(':city', "$city");
+   $statement->bindValue(':state', "$state");
+   $statement->bindValue(':zip', "$zip");
 	$statement->execute();
 	
 	// get id of last inserted row - save in $userId
