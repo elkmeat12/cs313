@@ -11,6 +11,8 @@ $zip = $_POST['inputZip'];
 require("dbConnect.php");
 $db = get_db();
 
+echo "$first $last with $phone and $email at $street $city, $state $zip";
+
 try
 {
 	$query = 'INSERT INTO customer (first_name, last_name, email, phone_number, street, city, state, zip_code) 
