@@ -64,7 +64,7 @@
 
         <hr>
         <?php
-          $customerId = $db->lastInsertId("customer_id_seq");
+          $customerId = $_GET['customerId'];
           $stmt = $db->prepare('SELECT * FROM customer WHERE ID = :customerId');
           $stmt->bindValue(':customerId', $customerId);
           $stmt->execute();
