@@ -101,7 +101,8 @@
            {
              $stmt = $db->prepare("SELECT c.category_name, i.item_name, i.item_description, i.price::float8::numeric::money
                                    FROM item i
-                                   JOIN category c ON i.category_id = c.id");
+                                   JOIN category c ON i.category_id = c.id
+                                   ORDER BY c.category_name");
 
             $stmt->execute();
 
