@@ -74,7 +74,7 @@
 
         <div class="row mx-3">
 
-         <form action="confirm.php" method="POST" class="needs-validation" novalidate>
+         <form action="insertUser.php" method="POST" class="needs-validation" novalidate>
             <!-- NAME -->
             <div class="form-row">
                <div class="form-group col-md-6">
