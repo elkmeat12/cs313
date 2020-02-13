@@ -36,7 +36,7 @@ catch (Exception $ex)
 	echo "Error with DB. Details: $ex";
 	die();
 }
-header("Location: confirm.php/?customerId=$customerId");
+header("Location: confirm.php");
 
 die(); 
 ?>
