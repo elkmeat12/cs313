@@ -57,9 +57,10 @@
 
       <div class="col-lg-3">
 
-        <!-- <h2 class="my-4">Browse Snacks</h2> -->
         <div class="list-group my-4">
           <a href="admin.php" class="list-group-item">Add Items</a>
+          <a href="orders.php" class="list-group-item active">Show Orders</a>
+          <a href="inventory.php" class="list-group-item">Inventory</a>
         </div>
 
       </div>
@@ -67,9 +68,57 @@
 
       <div class="col-lg-9">
 
-        <h4 class="my-4">Coming Soon</h4>
+        <h4 class="my-4">Orders</h4>
 
         <hr>
+
+        <?php
+            echo "<table class='table table-striped mb-auto'>";
+            echo "<tr><th>First Name</th><th>Last Name</th><th>Item</th><th>Price</th></tr>";
+
+            class TableRows extends RecursiveIteratorIterator {
+               function __construct($it) {
+                   parent::__construct($it, self::LEAVES_ONLY);
+               }
+           
+               function current() {
+                   return "<td>" . parent::current(). "</td>";
+               }
+           
+               function beginChildren() {
+                   echo "<tr>";
+               }
+           
+               function endChildren() {
+                   echo "</tr>" . "\n";
+               }
+           }
+
+           try
+           {
+             $stmt = $db->prepare("SELECT c.first_name, c.last_name, i.item_name, i.price::float8::numeric::money
+                                   FROM customer c
+                                   JOIN customer_order co ON co.customer_id = c.id
+                                   JOIN order_items oi ON oi.order_id = co.id 
+                                   JOIN item i ON i.id = oi.item_id
+                                   ORDER BY co.id");
+
+            $stmt->execute();
+
+            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+            foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v)
+            {
+               echo $v;
+            }
+           }
+           catch(PDOException $e)
+           {
+              echo "Error: " . $e->getMessage();
+           }
+           echo "</table>";
+         ?>
+         <br><br>
 
         <!-- /.row -->
       </div>
@@ -82,7 +131,7 @@
   <!-- /.container -->
   <br><br>
   <!-- Footer -->
-  <footer class="py-5 bg1 fixed-bottom">
+  <footer class="py-5 bg1">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Hooked</p>
     </div>

@@ -59,7 +59,6 @@
 
       <div class="col-lg-3">
 
-        <!-- <h2 class="my-4">Browse Snacks</h2> -->
         <div class="list-group my-4">
           <a href="admin.php" class="list-group-item">Add Items</a>
           <a href="orders.php" class="list-group-item">Show Orders</a>
