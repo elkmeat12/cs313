@@ -29,7 +29,7 @@ try
 	$statement->execute();
 	
 	// get id of last inserted row - save in $userId
-	$customerId = $db->lastInsertId("customer_id_seq");
+	$_SESSION["customerId"] = $db->lastInsertId("customer_id_seq");
 }
 catch (Exception $ex)
 {

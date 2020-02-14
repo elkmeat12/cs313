@@ -64,7 +64,7 @@
 
         <hr>
         <?php
-          $customerId = $_GET['customerId'];
+          $customerId = $_SESSION["customerId"];
           $stmt = $db->prepare('SELECT * FROM customer WHERE ID = :customerId');
           $stmt->bindValue(':customerId', $customerId);
           $stmt->execute();
