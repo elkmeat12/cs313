@@ -107,6 +107,22 @@
                   $description = $iRow["item_description"];
                   $price = $iRow["price"];
 
+                  $order = $db->prepare("SELECT * FROM customer_order");
+                  $order->execute();
+
+                  while ($oRow = $order->fetch(PDO::FETCH_ASSOC))
+                  {
+                    $order_id = $oRow["id"];
+                    $customer_id = $oRow["customer_id"];
+
+                    $orderItems = 'INSERT INTO order_items (order_id, item_id) VALUES (:orderId, :itemId)';
+                    $itemStmt = $db->prepare($orderItems);
+
+                    $itemStmt->bindValue(':orderId', $order_id);
+                    $itemStmt->bindValue(':itemId', $id);
+                    $itemStmt->execute();
+                  }
+
                   if(isset($_COOKIE["$id"])) {
                      if ($_COOKIE["$id"] > 0) { ?>
 
