@@ -96,12 +96,10 @@
 
            try
            {
-             $stmt = $db->prepare("SELECT c.first_name, c.last_name, i.item_name, i.price::float8::numeric::money
-                                   FROM customer c
-                                   JOIN customer_order co ON co.customer_id = c.id
-                                   JOIN order_items oi ON oi.order_id = co.id 
-                                   JOIN item i ON i.id = oi.item_id
-                                   ORDER BY co.id");
+            $stmt = $db->prepare("SELECT c.category_name, i.item_name, i.item_description, i.price::float8::numeric::money
+                                  FROM item i
+                                  JOIN category c ON i.category_id = c.id
+                                  ORDER BY c.category_name");
 
             $stmt->execute();
 
