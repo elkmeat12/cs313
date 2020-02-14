@@ -77,7 +77,7 @@
 
         <div class="row mx-3">
 
-         <form action="insertOrder.php" method="POST" class="needs-validation" novalidate>
+         <form action="insertOrder.php" method="POST" class="needs-validation" enctype="multipart/form-data" novalidate>
             <!-- ITEM NAME -->
             <div class="form-row">
                <div class="form-group col-md-6">
@@ -126,7 +126,7 @@
                   <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
                </div>
                <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="item_image"
+                  <input type="file" class="custom-file-input" id="item_image" name="item_image"
                      aria-describedby="inputGroupFileAddon01" accept="image/.jpg">
                   <label class="custom-file-label" for="item_image">Add item image</label>
                </div>
