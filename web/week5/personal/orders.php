@@ -76,7 +76,7 @@
 
         <?php
             echo "<table class='table table-striped mb-auto'>";
-            echo "<tr><th>First Name</th><th>Last Name</th><th>Item</th><th>Price</th></tr>";
+            echo "<tr><th>First Name</th><th>Last Name</th><th>Item Purchased</th><th>Price</th></tr>";
 
             class TableRows extends RecursiveIteratorIterator {
                function __construct($it) {
