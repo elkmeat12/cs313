@@ -80,11 +80,14 @@
             $city = $row['city'];
             $state = $row['state'];
             $zip = $row['zip_code'];
-
-            echo "Thank you for your order $first $last!<br>";
-            echo "The items you purchase below will be delivered to:<br><br>
-                  <em>$street<br>
-                  $city, $state $zip</em>";
+            
+            if ($customerId == $id)
+            {
+              echo "Thank you for your order $first $last!<br>";
+              echo "The items you purchase below will be delivered to:<br><br>
+                    <em>$street<br>
+                    $city, $state $zip</em>";
+            }
           }
         ?>
 
