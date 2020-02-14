@@ -34,7 +34,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg1">
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg1">
     <div class="container">
       <a class="navbar-brand" href="hooked.php">Hooked</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +54,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
   <!-- Page Content -->
   <div class="container">
@@ -137,12 +137,12 @@
   <!-- /.container -->
   <br><br>
   <!-- Footer -->
-  <footer class="py-5 bg1">
+  <!-- <footer class="py-5 bg1">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Hooked</p>
-    </div>
+    </div> -->
     <!-- /.container -->
-  </footer>
+  <!-- </footer> -->
 
 
 </body>
