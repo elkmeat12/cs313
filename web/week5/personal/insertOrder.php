@@ -9,7 +9,7 @@
    $category = $_POST['sCat'];
 
    /* IMAGE UPLOAD */
-   $target_dir = "images/";
+   $target_dir = "/week5/personal/images/";
    $target_file = $target_dir . basename($_FILES["item_image"]["name"]);
    $uploadOk = 1;
    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
