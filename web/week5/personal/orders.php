@@ -1,5 +1,7 @@
 <?php
    session_start();
+   require("../../temp/dbConnect.php");
+   $db = get_db();
 ?>
 
 <!DOCTYPE html>
@@ -74,7 +76,7 @@
 
         <?php
             echo "<table class='table table-striped mb-auto'>";
-            echo "<tr><th>Category</th><th>Name</th><th>Description</th><th>Price</th></tr>";
+            echo "<tr><th>First Name</th><th>Last Name</th><th>Item</th><th>Price</th></tr>";
 
             class TableRows extends RecursiveIteratorIterator {
                function __construct($it) {
@@ -96,10 +98,12 @@
 
            try
            {
-            $stmt = $db->prepare("SELECT c.category_name, i.item_name, i.item_description, i.price::float8::numeric::money
-                                  FROM item i
-                                  JOIN category c ON i.category_id = c.id
-                                  ORDER BY c.category_name");
+             $stmt = $db->prepare("SELECT c.first_name, c.last_name, i.item_name, i.price::float8::numeric::money
+                                   FROM customer c
+                                   JOIN customer_order co ON co.customer_id = c.id
+                                   JOIN order_items oi ON oi.order_id = co.id 
+                                   JOIN item i ON i.id = oi.item_id
+                                   ORDER BY co.id");
 
             $stmt->execute();
 
