@@ -7,6 +7,11 @@
    $stmt = $db->prepare('SELECT * FROM customer WHERE ID = :customerId');
    $stmt->bindValue(':customerId', $customerId);
    $stmt->execute();
+
+   $cOrderQuery = 'INSERT INTO customer_order (customer_id) VALUES (:customer)';
+   $orderStmt = $db->prepare($cOrderQuery);
+   $orderStmt->bindValue(':customer', $customerId);
+   $orderStmt->execute();
 ?>
 
 <!DOCTYPE html>
