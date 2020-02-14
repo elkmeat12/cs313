@@ -2,6 +2,11 @@
    session_start();
    require "../../temp/dbConnect.php";
    $db = get_db();
+
+   $customerId = $_GET["customerId"];
+   $stmt = $db->prepare('SELECT * FROM customer WHERE ID = :customerId');
+   $stmt->bindValue(':customerId', $customerId);
+   $stmt->execute();
 ?>
 
 <!DOCTYPE html>
@@ -64,11 +69,6 @@
 
         <hr>
         <?php
-          $customerId = $_SESSION["customerId"];
-          $stmt = $db->prepare('SELECT * FROM customer WHERE ID = :customerId');
-          $stmt->bindValue(':customerId', $customerId);
-          $stmt->execute();
-
           while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
           {
             $id = $row['id'];
@@ -81,13 +81,10 @@
             $state = $row['state'];
             $zip = $row['zip_code'];
             
-            if ($customerId == $id)
-            {
-              echo "Thank you for your order $first $last!<br>";
-              echo "The items you purchase below will be delivered to:<br><br>
-                    <em>$street<br>
-                    $city, $state $zip</em>";
-            }
+            echo "Thank you for your order $first $last!<br>";
+            echo "The items you purchase below will be delivered to:<br><br>
+                  <em>$street<br>
+                  $city, $state $zip</em>";
           }
         ?>
 
