@@ -6,7 +6,7 @@ CREATE TABLE category
 CREATE TABLE item 
 ( id                   SERIAL         NOT NULL    PRIMARY KEY
 , category_id          INT            NOT NULL    REFERENCES     category(id)
-, image                VARCHAR(500)   NOT NULL
+, image                VARCHAR(500)
 , item_name            VARCHAR(100)   NOT NULL
 , item_description     TEXT           NOT NULL
 , price                DECIMAL(10,2)  NOT NULL

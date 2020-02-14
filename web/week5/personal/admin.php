@@ -127,7 +127,7 @@
                </div>
                <div class="custom-file">
                   <input type="file" class="custom-file-input" id="item_image"
-                     aria-describedby="inputGroupFileAddon01" accept="image/.jpg" required>
+                     aria-describedby="inputGroupFileAddon01" accept="image/.jpg">
                   <label class="custom-file-label" for="item_image">Add item image</label>
                </div>
             </div>
