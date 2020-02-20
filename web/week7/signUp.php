@@ -17,12 +17,6 @@
    <title>Sign Up</title>
 </head>
 <body>
-   <?php
-      if (isset($_SESSION["notMatch"]) && $_SESSION["notMatch"] == true)
-      {
-         echo "<h1>Passwords did not match</h1>";
-      }
-   ?>
    <div id="login">
       <h3 class="text-center text-white pt-5">Week 7 Team</h3>
       <div class="container">
@@ -44,6 +38,12 @@
                               <label for="verifyPass" class="text-info">Verify Password:</label><br>
                               <input type="password" name="verifyPass" id="verifyPass" class="form-control">
                            </div>
+                           <?php
+                              if (isset($_SESSION["notMatch"]) && $_SESSION["notMatch"] == true)
+                              {
+                                 echo "<p style='color:red'>Passwords did not match</p>";
+                              }
+                           ?>
                            <div class="form-group text-center">
                               <input type="submit" name="submit" class="btn btn-info btn-md wide-item" value="Create Account">
                            </div>
