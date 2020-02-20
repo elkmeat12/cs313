@@ -17,3 +17,9 @@ body {
  #login .container #login-row #login-column #login-box #login-form #register-link {
    margin-top: -85px;
  }
+
+ .center-item {
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+ }

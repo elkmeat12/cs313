@@ -67,12 +67,11 @@
                               <input type="password" name="txtPass" id="txtPass" class="form-control" maxlength="16">
                            </div>
                            <div class="form-group">
-                              <input type="submit" name="submit" class="btn btn-info btn-md" value="Submit">
-                              <a href="signUp.php" class="text-info text-right float-right">Create New Account</a>
+                              <input type="submit" name="submit" class="btn btn-info btn-md center-item" value="Login">
                            </div>
-                           <!-- <div id="register-link" class="text-right">
-                              <a href="signUp.php" class="text-info">Create New Account Here</a>
-                           </div> -->
+                           <div class="form-group">
+                              <a href="signUp.php" class="text-info text-right float-right center-item">Create New Account</a>
+                           </div>
                      </form>
                   </div>
                </div>
