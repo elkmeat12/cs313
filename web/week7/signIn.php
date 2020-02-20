@@ -28,6 +28,7 @@
          }
          else
          {
+            echo "<h1>Wrong Password</h1>";
             $failedLogin = true;
          }
       }
