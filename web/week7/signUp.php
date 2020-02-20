@@ -31,18 +31,10 @@
                               <label for="txtPass" class="text-info">Password:</label><br>
                               <input type="password" name="txtPass" id="txtPass" class="form-control" maxlength="25" minlength="7">
                            </div>
-                           <div class="form-group">
+                           <div class="form-group text-center">
                               <label for="verifyPass" class="text-info">Verify Password:</label><br>
                               <input type="password" name="verifyPass" id="verifyPass" class="form-control">
                            </div>
-
-                           <?php
-                              if ($_POST["txtPass"] != $_POST["verifyPass"]){
-                                 echo "Passwords do not match.";
-                                 exit();
-                              }
-                           ?>
-
                            <div class="form-group">
                               <input type="submit" name="submit" class="btn btn-info btn-md" value="Create Account">
                            </div>
