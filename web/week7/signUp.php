@@ -36,7 +36,7 @@
                               <input type="password" name="verifyPass" id="verifyPass" class="form-control">
                            </div>
                            <div class="form-group text-center">
-                              <input type="submit" name="submit" class="btn btn-info btn-md" value="Create Account">
+                              <input type="submit" name="submit" class="btn btn-info btn-md wide-item" value="Create Account">
                            </div>
                      </form>
 
