@@ -1,3 +1,43 @@
+<?php
+   session_start();
+   require("../temp/dbConnect.php");
+   $db = get_db();
+
+   $failedLogin = false;
+
+   if (isset($_POST['txtUser']) && isset($_POST['txtPass']))
+   {
+      $username = $_POST['txtUser'];
+      $password = $_POST['txtPass'];
+
+      $query = 'SELECT password FROM w7_users WHERE username=:username';
+      $stmt = $db->prepare($query);
+      $stmt->bindValue(':username', $username);
+      $result = $stmt->execute();
+
+      if ($result)
+      {
+         $row = $stmt->fetch();
+         $hashPass = $row['password'];
+
+         if (password_verify($password, $hashPass))
+         {
+            $_SESSION['username'] = $username;
+            header("Location: welcome.php");
+            die();
+         }
+         else
+         {
+            $failedLogin = true;
+         }
+      }
+      else
+      {
+         $failedLogin = true;
+      }
+   }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
