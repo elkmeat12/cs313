@@ -12,7 +12,7 @@
 <body>
    <div id="login">
       <h3 class="text-center text-white pt-5">Week 7 Team</h3>
-      <div class="container" style="height: 320px">
+      <div class="container" style="height: 500px">
          <div id="login-row" class="row justify-content-center align-items-center">
                <div id="login-column" class="col-md-6">
                   <div id="login-box" class="col-md-12">
