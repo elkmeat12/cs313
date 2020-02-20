@@ -1,6 +1,8 @@
 <?php
    session_start();
-   $_SESSION["notMatch"] = false;
+   if (!isset($_SESSION["notMatch"])){
+      $_SESSION["notMatch"] = false;
+   }
 ?>
 
 <!DOCTYPE html>
