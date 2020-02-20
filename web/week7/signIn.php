@@ -28,6 +28,7 @@
                            </div>
                            <div class="form-group">
                               <input type="submit" name="submit" class="btn btn-info btn-md" value="Submit">
+                              <a href="signUp.php" class="text-info text-right">Create New Account Here</a>
                            </div>
                            <!-- <div id="register-link" class="text-right">
                               <a href="signUp.php" class="text-info">Create New Account Here</a>
