@@ -70,7 +70,7 @@
                               <input type="submit" name="submit" class="btn btn-info btn-md" value="Login">
                            </div>
                            <div class="form-group">
-                              <a href="signUp.php" class="text-info text-right center-item">Create New Account</a>
+                              <a href="signUp.php" class="text-info center-item">Create New Account</a>
                            </div>
                      </form>
                   </div>
