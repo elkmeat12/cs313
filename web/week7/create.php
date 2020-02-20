@@ -4,10 +4,20 @@
 
    $username = $_POST['txtUser'];
    $password = $_POST['txtPass'];
+   $verifyPass = $_POST['verifyPass'];
 
-   if (!isset($username) || $username == "" || !isset($password) || $password == "")
+   if (!isset($username) || $username == "" || 
+       !isset($password) || $password == "" ||
+       !isset($verifyPass) || $verifyPass == "")
    {
       header("Location: signUp.php");
+      die();
+   }
+
+   if ($password != $verifyPass)
+   {
+      header("Location: signUp.php");
+      echo "<h1>Passwords do not match</h1>";
       die();
    }
 
