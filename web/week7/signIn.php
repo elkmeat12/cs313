@@ -64,7 +64,7 @@
                            </div>
                            <div class="form-group">
                               <label for="txtPass" class="text-info">Password:</label><br>
-                              <input type="password" name="txtPass" id="txtPass" class="form-control" maxlength="16">
+                              <input type="password" name="txtPass" id="txtPass" class="form-control" maxlength="25">
                            </div>
                            <div class="form-group text-center">
                               <input type="submit" name="submit" class="btn btn-info btn-md wide-item" value="Login">
