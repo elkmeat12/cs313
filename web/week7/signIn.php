@@ -66,11 +66,11 @@
                               <label for="txtPass" class="text-info">Password:</label><br>
                               <input type="password" name="txtPass" id="txtPass" class="form-control" maxlength="16">
                            </div>
-                           <div class="form-group center-item">
+                           <div class="form-group text-center">
                               <input type="submit" name="submit" class="btn btn-info btn-md" value="Login">
                            </div>
                            <div class="form-group">
-                              <a href="signUp.php" class="text-info center-item">Create New Account</a>
+                              <a href="signUp.php" class="text-info">Create New Account</a>
                            </div>
                      </form>
                   </div>
