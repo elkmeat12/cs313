@@ -28,7 +28,6 @@
          }
          else
          {
-            echo "<h1>Wrong Password</h1>";
             $failedLogin = true;
          }
       }
@@ -72,6 +71,12 @@
                            </div>
                            <div class="form-group text-center">
                               <a href="signUp.php" class="text-info">Create New Account</a>
+                              <?php
+                                 if ($failedLogin == true)
+                                 {
+                                    echo "<p style='color:red'>Username or password is incorrect</p>";
+                                 }
+                              ?>
                            </div>
                      </form>
                   </div>
