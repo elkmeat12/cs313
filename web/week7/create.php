@@ -17,7 +17,7 @@
    if ($password != $verifyPass)
    {
       header("Location: signUp.php");
-      echo "<h1>Passwords do not match</h1>";
+      $_SESSION["notMatch"] = true;
       die();
    }
 

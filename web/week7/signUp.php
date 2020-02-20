@@ -1,5 +1,6 @@
 <?php
    session_start();
+   $_SESSION["notMatch"] = false;
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +15,12 @@
    <title>Sign Up</title>
 </head>
 <body>
+   <?php
+      if ($_SESSION["notMatch"] == true)
+      {
+         echo "<h1>Passwords did not match</h1>";
+      }
+   ?>
    <div id="login">
       <h3 class="text-center text-white pt-5">Week 7 Team</h3>
       <div class="container">
