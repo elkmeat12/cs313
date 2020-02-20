@@ -18,7 +18,7 @@
 </head>
 <body>
    <?php
-      if ($_SESSION["notMatch"] == true)
+      if (isset($_SESSION["notMatch"]) && $_SESSION["notMatch"] == true)
       {
          echo "<h1>Passwords did not match</h1>";
       }
