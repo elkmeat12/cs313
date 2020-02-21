@@ -41,7 +41,7 @@
                            <?php
                               if (isset($_SESSION["notMatch"]) && $_SESSION["notMatch"] == true)
                               {
-                                 echo "<p style='color:red'>Passwords did not match</p>";
+                                 echo "<p style='color:red'>Passwords do not match. Try again.</p>";
                               }
                            ?>
                            <div class="form-group text-center">

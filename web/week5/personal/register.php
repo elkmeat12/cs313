@@ -3,38 +3,8 @@
    require "../../temp/dbConnect.php";
    $db = get_db();
 
-   $failedLogin = false;
-
-   if (isset($_POST['txtUser']) && isset($_POST['txtPass']))
-   {
-      $username = $_POST['txtUser'];
-      $password = $_POST['txtPass'];
-
-      $query = 'SELECT password FROM w7_users WHERE username=:username';
-      $stmt = $db->prepare($query);
-      $stmt->bindValue(':username', $username);
-      $result = $stmt->execute();
-
-      if ($result)
-      {
-         $row = $stmt->fetch();
-         $hashPass = $row['password'];
-
-         if (password_verify($password, $hashPass))
-         {
-            $_SESSION['username'] = $username;
-            header("Location: admin.php");
-            die();
-         }
-         else
-         {
-            $failedLogin = true;
-         }
-      }
-      else
-      {
-         $failedLogin = true;
-      }
+   if (!isset($_SESSION["notMatch"])) {
+     $_SESSION["notMatch"] = false;
    }
 ?>
 
@@ -48,7 +18,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Hooked :: Admin Login</title>
+  <title>Hooked :: Register Admin</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -95,9 +65,9 @@
 
       <div class="col-lg-12">
 
-         <form action="login.php" method="post" class="center-item my-4">
+         <form action="registerAdmin.php" method="post" class="center-item my-4">
             <div class="container">
-               <h4 class="text-center">Admin Login</h4>
+               <h4 class="text-center">Register to be an Admin</h4>
                <hr>
                <label for="txtUser"><b>Username</b></label>
                <input type="text" placeholder="Enter Username" name="txtUser" id="txtUser" required>
@@ -105,15 +75,17 @@
                <label for="txtPass"><b>Password</b></label>
                <input type="password" placeholder="Enter Password" name="txtPass" id="txtPass" maxlength="25" required>
 
-               <input type="submit" name="submit" class="btn btn-info btn-md" value="Login">
-               <a href="register.php" class="text-info">Register to be an Admin</a>
+               <label for="verifyPass"><b>Confirm Password</b></label>
+               <input type="password" placeholder="Enter Password" name="verifyPass" id="verifyPass" maxlength="25" required>
 
                <?php
-                  if ($failedLogin == true)
+                  if (isset($_SESSION["notMatch"]) && $_SESSION["notMatch"] == true)
                   {
-                    echo "<p style='color:red'>Username or password is incorrect</p>";
+                      echo "<p style='color:red'>Passwords do not match. Try again.</p>";
                   }
-              ?>
+                ?>
+                
+                <input type="submit" name="submit" class="btn btn-info btn-md" value="Register"> 
             </div>
 
          </form>
