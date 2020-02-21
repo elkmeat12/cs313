@@ -85,7 +85,7 @@
                   }
                 ?>
                 
-                <input type="submit" name="submit" class="btn btn-info btn-md" value="Register"> 
+                <input type="submit" name="submit" class="btn btn-info btn-md btn-style" value="Register"> 
             </div>
 
          </form>

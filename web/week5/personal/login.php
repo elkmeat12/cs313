@@ -105,7 +105,8 @@
                <label for="txtPass"><b>Password</b></label>
                <input type="password" placeholder="Enter Password" name="txtPass" id="txtPass" maxlength="25" required>
 
-               <input type="submit" name="submit" class="btn btn-info btn-md" value="Login">
+               <input type="submit" name="submit" class="btn btn-info btn-md btn-style" value="Login">
+               <br>
                <a href="register.php" class="text-info">Register to be an Admin</a>
 
                <?php
