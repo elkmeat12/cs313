@@ -1,6 +1,6 @@
 <?php
    session_start();
-   require("../temp/dbConnect.php");
+   require("../../temp/dbConnect.php");
    $db = get_db();
 
    $username = $_POST['txtUser'];
